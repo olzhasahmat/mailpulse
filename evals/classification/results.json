@@ -1,0 +1,65 @@
+{
+  "n": 40,
+  "configs": {
+    "prod": {
+      "metrics": {
+        "importance_accuracy": 0.775,
+        "importance_macro_f1": 0.7983759661391241,
+        "recall_ge2": 1.0,
+        "category_accuracy": 0.65,
+        "needs_reply_accuracy": 0.95,
+        "suspicious_recall": 1.0,
+        "suspicious_precision": 1.0,
+        "extraction_exact": 0.8,
+        "avg_cost_usd": 0.003543,
+        "total_cost_usd": 0.1417,
+        "p95_latency_ms": 2386
+      }
+    },
+    "sonnet": {
+      "metrics": {
+        "importance_accuracy": 0.775,
+        "importance_macro_f1": 0.7934276980329611,
+        "recall_ge2": 0.9285714285714286,
+        "category_accuracy": 0.75,
+        "needs_reply_accuracy": 0.9,
+        "suspicious_recall": 1.0,
+        "suspicious_precision": 1.0,
+        "extraction_exact": 0.9,
+        "avg_cost_usd": 0.007779,
+        "total_cost_usd": 0.3112,
+        "p95_latency_ms": 4530
+      }
+    },
+    "haiku-t05": {
+      "metrics": {
+        "importance_accuracy": 0.75,
+        "importance_macro_f1": 0.7783787532071285,
+        "recall_ge2": 1.0,
+        "category_accuracy": 0.7,
+        "needs_reply_accuracy": 0.925,
+        "suspicious_recall": 1.0,
+        "suspicious_precision": 1.0,
+        "extraction_exact": 0.9,
+        "avg_cost_usd": 0.003525,
+        "total_cost_usd": 0.141,
+        "p95_latency_ms": 2616
+      }
+    },
+    "haiku-t10": {
+      "metrics": {
+        "importance_accuracy": 0.85,
+        "importance_macro_f1": 0.8589813090720532,
+        "recall_ge2": 1.0,
+        "category_accuracy": 0.7,
+        "needs_reply_accuracy": 0.925,
+        "suspicious_recall": 1.0,
+        "suspicious_precision": 1.0,
+        "extraction_exact": 0.8,
+        "avg_cost_usd": 0.003532,
+        "total_cost_usd": 0.1413,
+        "p95_latency_ms": 2996
+      }
+    }
+  }
+}

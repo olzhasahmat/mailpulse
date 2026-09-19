@@ -1,0 +1,32 @@
+{"id": "q01", "kind": "search", "text": "счёт 402", "relevant": ["inv-402"]}
+{"id": "q02", "kind": "search", "text": "договор аренды офиса", "relevant": ["lease-1", "lease-2"]}
+{"id": "q03", "kind": "search", "text": "когда вылет в Стамбул", "relevant": ["flight"]}
+{"id": "q04", "kind": "search", "text": "пароль от вайфая в офисе", "relevant": ["wifi"]}
+{"id": "q05", "kind": "search", "text": "Ахметова", "relevant": ["hr-1", "hr-3"]}
+{"id": "q06", "kind": "search", "text": "техническое интервью", "relevant": ["hr-1", "hr-2", "hr-3"]}
+{"id": "q07", "kind": "search", "text": "AWS invoice", "relevant": ["aws-invoice"]}
+{"id": "q08", "kind": "search", "text": "жалоба клиента на доставку", "relevant": ["complaint", "escalation"]}
+{"id": "q09", "kind": "search", "text": "продлить рабочую визу", "relevant": ["visa"]}
+{"id": "q10", "kind": "search", "text": "отчёт по продажам за август", "relevant": ["sales-aug"]}
+{"id": "q11", "kind": "search", "text": "салық декларациясы", "relevant": ["tax-kz", "tax-ru"]}
+{"id": "q12", "kind": "search", "text": "tax declaration deadline", "relevant": ["tax-kz", "tax-ru"]}
+{"id": "q13", "kind": "email", "text": "Re: Договор поставки ноутбуков\n\nСергей, подскажите адрес доставки и точную дату поставки ноутбуков.", "relevant": ["laptops-1", "laptops-2", "laptops-3"]}
+{"id": "q14", "kind": "email", "text": "Напоминание об оплате\n\nНапоминаем, что счёт №318 нужно оплатить до 16 сентября.", "relevant": ["inv-318"]}
+{"id": "q15", "kind": "email", "text": "Интервью в среду\n\nДана Ахметова: подтвердите, пожалуйста, что интервью в среду в 15:00 в силе.", "relevant": ["hr-1", "hr-2", "hr-3"]}
+{"id": "q16", "kind": "email", "text": "Изменение времени вылета\n\nВаш рейс KC 925 Алматы — Стамбул переносится на 09:10.", "relevant": ["flight"]}
+{"id": "q17", "kind": "email", "text": "Правки к договору аренды\n\nЕржан: выслал новую версию договора аренды с правками по индексации.", "relevant": ["lease-1", "lease-2"]}
+{"id": "q18", "kind": "email", "text": "Order #58213 still missing\n\nThe customer says order #58213 has not arrived yet. Please check with the courier.", "relevant": ["complaint"]}
+{"id": "q19", "kind": "email", "text": "Отчёт по продажам за сентябрь\n\nАсель: продажи за сентябрь составили 51 млн тенге.", "relevant": ["sales-aug", "sales-jul"]}
+{"id": "q20", "kind": "email", "text": "Подарок Тимуру\n\nНапоминаю: до четверга скидываемся на подарок Тимуру.", "relevant": ["bday"]}
+{"id": "n01", "kind": "search", "text": "рецепт торта Наполеон", "relevant": []}
+{"id": "n02", "kind": "search", "text": "запись к стоматологу", "relevant": []}
+{"id": "n03", "kind": "search", "text": "абонемент в бассейн", "relevant": []}
+{"id": "n04", "kind": "email", "text": "Родительское собрание\n\nСобрание 3 «А» класса пройдёт в пятницу в 18:00 в кабинете 204.", "relevant": []}
+{"id": "n05", "kind": "email", "text": "Итоги фотоконкурса\n\nПобедителями фотоконкурса «Осень в горах» стали три участника.", "relevant": []}
+{"id": "n06", "kind": "email", "text": "Смета на ремонт ванной\n\nСмета на ремонт ванной комнаты готова: плитка и сантехника.", "relevant": []}
+{"id": "q21", "kind": "email", "text": "Ссылка на демо для завтрашней предзащиты\n\nПришлите, пожалуйста, до 21:00 сегодня ссылку на развёрнутый проект или запись демо для завтрашней предзащиты.", "relevant": ["predefense"]}
+{"id": "q22", "kind": "email", "text": "Re: Документы для налоговой декларации ИП\n\nГульнара, выписки и акты за квартал отправлю завтра.", "relevant": ["tax-ru"]}
+{"id": "n07", "kind": "email", "text": "Итоги голосования ТСЖ\n\nПо итогам голосования жильцы решили заменить лифт в третьем подъезде.", "relevant": []}
+{"id": "n08", "kind": "email", "text": "Новый график вывоза мусора\n\nС 1 октября мусор вывозят по вторникам и пятницам.", "relevant": []}
+{"id": "n09", "kind": "search", "text": "здравствуйте", "relevant": []}
+{"id": "n10", "kind": "email", "text": "Урок гитары переносится\n\nЗанятие по гитаре переносится на субботу, 11:00.", "relevant": []}

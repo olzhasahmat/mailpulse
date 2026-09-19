@@ -1,0 +1,54 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	load_email(load_email)
+	extract_attachments(extract_attachments)
+	guardrail(guardrail)
+	quarantine_notify(quarantine_notify)
+	apply_rules(apply_rules)
+	retrieve(retrieve)
+	classify(classify)
+	digest_enqueue(digest_enqueue)
+	summarize(summarize)
+	send_card(send_card)
+	await_action(await_action)
+	record_feedback(record_feedback)
+	draft_reply(draft_reply)
+	send_draft_card(send_draft_card)
+	review_draft(review_draft)
+	send_reply(send_reply)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> load_email;
+	apply_rules -.-> __end__;
+	apply_rules -.-> retrieve;
+	await_action -.-> draft_reply;
+	await_action -.-> record_feedback;
+	classify -.-> __end__;
+	classify -.-> digest_enqueue;
+	classify -.-> quarantine_notify;
+	classify -.-> summarize;
+	draft_reply --> send_draft_card;
+	extract_attachments --> guardrail;
+	guardrail -.-> apply_rules;
+	guardrail -.-> quarantine_notify;
+	load_email -.-> extract_attachments;
+	load_email -.-> guardrail;
+	retrieve --> classify;
+	review_draft -.-> __end__;
+	review_draft -.-> draft_reply;
+	review_draft -.-> send_reply;
+	send_card --> await_action;
+	send_draft_card --> review_draft;
+	summarize --> send_card;
+	digest_enqueue --> __end__;
+	quarantine_notify --> __end__;
+	record_feedback --> __end__;
+	send_reply --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+

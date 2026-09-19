@@ -1,0 +1,75 @@
+[project]
+name = "mailpulse"
+version = "0.1.0"
+description = "AI-агент для входящей почты: разбирает письма из нескольких ящиков и присылает важное в Telegram"
+readme = "README.md"
+authors = [{ name = "Olzhas A", email = "olzhas.ahmat@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.31.0",
+    "aiosmtplib>=5.1.3",
+    "alembic>=1.20.0",
+    "anthropic>=1.5.0",
+    "beautifulsoup4>=4.15.0",
+    "cryptography>=50.0.1",
+    "fastapi>=0.141.1",
+    "fastembed>=0.8.0",
+    "imapclient>=4.0.1",
+    "langgraph>=1.2.11",
+    "langgraph-checkpoint-postgres>=3.1.2",
+    "langsmith>=0.12.4",
+    "mcp[cli]>=2.2.0",
+    "msal>=1.38.0",
+    "pgvector>=0.5.0",
+    "pillow>=12.3.0",
+    "psycopg[binary,pool]>=3.3.5",
+    "pydantic-settings>=2.15.0",
+    "pypdf>=6.18.1",
+    "python-docx>=1.2.0",
+    "pyyaml>=6.0.3",
+    "sqlalchemy[asyncio]>=2.0.52",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+mailpulse-api = "mailpulse.api.main:run"
+mailpulse-worker = "mailpulse.worker.main:run"
+mailpulse-bot = "mailpulse.bot.main:run"
+mailpulse-mcp = "mailpulse.mcp_server.server:run"
+mailpulse-migrate = "mailpulse.db.migrate:run"
+mailpulse-ingest = "mailpulse.ingest.main:run"
+mailpulse-accounts = "mailpulse.accounts_cli:run"
+mailpulse-inject = "mailpulse.inject_cli:run"
+mailpulse-import = "mailpulse.import_cli:run"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "ruff>=0.16.7",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# FastAPI: Depends()/Header() в значениях по умолчанию — идиома фреймворка
+"src/mailpulse/api/*" = ["B008"]
+# Датасет: длинные строки писем не переносим
+"evals/classification/*.py" = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+markers = ["db: нужен запущенный Postgres (make db)"]

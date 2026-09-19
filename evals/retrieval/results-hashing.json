@@ -1,0 +1,6696 @@
+{
+  "embedder": "hashing",
+  "corpus": 69,
+  "configs": {
+    "header/vector": {
+      "summary": {
+        "recall@5": 0.8636363636363636,
+        "mrr": 0.8136363636363636,
+        "recall@5 search": 0.75,
+        "recall@5 email": 1.0
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.583
+          ],
+          [
+            "inv-318",
+            0.802
+          ],
+          [
+            "inv-245",
+            0.8093
+          ],
+          [
+            "technodom-sale",
+            0.9055
+          ],
+          [
+            "beeline-bill",
+            0.9095
+          ]
+        ],
+        "q02": [
+          [
+            "lease-1",
+            0.6363
+          ],
+          [
+            "lease-2",
+            0.6393
+          ],
+          [
+            "cleaning-contract",
+            0.6595
+          ],
+          [
+            "laptop-request",
+            0.75
+          ],
+          [
+            "confirm-email",
+            0.8127
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.7278
+          ],
+          [
+            "escalation",
+            0.8079
+          ],
+          [
+            "marketing-report",
+            0.8378
+          ],
+          [
+            "parcel",
+            0.8399
+          ],
+          [
+            "corp-party",
+            0.8438
+          ]
+        ],
+        "q04": [
+          [
+            "wifi",
+            0.5562
+          ],
+          [
+            "yandex-app-password",
+            0.6838
+          ],
+          [
+            "yandex-password-changed",
+            0.7136
+          ],
+          [
+            "aviasales-deals",
+            0.7519
+          ],
+          [
+            "escalation",
+            0.771
+          ]
+        ],
+        "q05": [
+          [
+            "hr-1",
+            0.7172
+          ],
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "hr-3",
+            0.8492
+          ],
+          [
+            "laptops-1",
+            0.8526
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "q06": [
+          [
+            "hr-1",
+            0.6
+          ],
+          [
+            "hr-2",
+            0.7538
+          ],
+          [
+            "hr-3",
+            0.7868
+          ],
+          [
+            "sales-aug",
+            0.8934
+          ],
+          [
+            "github-ci",
+            0.901
+          ]
+        ],
+        "q07": [
+          [
+            "aws-invoice",
+            0.7482
+          ],
+          [
+            "tax-ru",
+            0.8868
+          ],
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "q08": [
+          [
+            "hr-2",
+            0.7389
+          ],
+          [
+            "hr-3",
+            0.7739
+          ],
+          [
+            "delivery-failure",
+            0.7788
+          ],
+          [
+            "hr-1",
+            0.7879
+          ],
+          [
+            "escalation",
+            0.8079
+          ]
+        ],
+        "q09": [
+          [
+            "hr-2",
+            0.8995
+          ],
+          [
+            "flight-old-delay",
+            0.9139
+          ],
+          [
+            "inv-402",
+            0.9149
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ],
+          [
+            "laptops-1",
+            1.0
+          ]
+        ],
+        "q10": [
+          [
+            "sales-aug",
+            0.5281
+          ],
+          [
+            "beeline-bill",
+            0.5992
+          ],
+          [
+            "sales-jul",
+            0.6373
+          ],
+          [
+            "kaspi-statement",
+            0.6816
+          ],
+          [
+            "tax-kz",
+            0.8064
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6938
+          ],
+          [
+            "coursera",
+            0.7868
+          ],
+          [
+            "kaspi-statement",
+            0.8322
+          ],
+          [
+            "auto-reply",
+            0.8787
+          ],
+          [
+            "canteen-menu",
+            0.8821
+          ]
+        ],
+        "q12": [
+          [
+            "hr-1",
+            0.8367
+          ],
+          [
+            "yandex-password-changed",
+            0.9075
+          ],
+          [
+            "hr-3",
+            0.913
+          ],
+          [
+            "laptops-1",
+            0.9149
+          ],
+          [
+            "inv-402",
+            0.9149
+          ]
+        ],
+        "q13": [
+          [
+            "laptops-3",
+            0.5833
+          ],
+          [
+            "laptops-2",
+            0.6999
+          ],
+          [
+            "laptops-1",
+            0.8212
+          ],
+          [
+            "laptop-request",
+            0.825
+          ],
+          [
+            "confirm-email",
+            0.882
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.5958
+          ],
+          [
+            "vpn",
+            0.7938
+          ],
+          [
+            "visa",
+            0.8036
+          ],
+          [
+            "inv-245",
+            0.8054
+          ],
+          [
+            "hotel",
+            0.8197
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.525
+          ],
+          [
+            "hr-3",
+            0.6802
+          ],
+          [
+            "hr-2",
+            0.723
+          ],
+          [
+            "corp-party",
+            0.7239
+          ],
+          [
+            "escalation",
+            0.7284
+          ]
+        ],
+        "q16": [
+          [
+            "flight",
+            0.6226
+          ],
+          [
+            "flight-old-delay",
+            0.6692
+          ],
+          [
+            "predefense",
+            0.7955
+          ],
+          [
+            "hr-2",
+            0.8069
+          ],
+          [
+            "designer-interview",
+            0.8399
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.748
+          ],
+          [
+            "lease-2",
+            0.8438
+          ],
+          [
+            "designer-interview",
+            0.8917
+          ],
+          [
+            "tax-kz",
+            0.8917
+          ],
+          [
+            "hh-vacancies",
+            0.9189
+          ]
+        ],
+        "q18": [
+          [
+            "delivery-failure",
+            0.8796
+          ],
+          [
+            "complaint",
+            0.8878
+          ],
+          [
+            "inv-402",
+            0.9097
+          ],
+          [
+            "parcel",
+            0.9346
+          ],
+          [
+            "coursera",
+            0.9385
+          ]
+        ],
+        "q19": [
+          [
+            "sales-aug",
+            0.5612
+          ],
+          [
+            "sales-jul",
+            0.5672
+          ],
+          [
+            "beeline-bill",
+            0.6895
+          ],
+          [
+            "kaspi-statement",
+            0.7122
+          ],
+          [
+            "inv-402",
+            0.7497
+          ]
+        ],
+        "q20": [
+          [
+            "bday",
+            0.6729
+          ],
+          [
+            "technodom-sale",
+            0.8147
+          ],
+          [
+            "predefense",
+            0.8773
+          ],
+          [
+            "inv-318",
+            0.8835
+          ],
+          [
+            "inv-245",
+            0.8878
+          ]
+        ],
+        "n01": [
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "n02": [
+          [
+            "hr-1",
+            0.8367
+          ],
+          [
+            "test-task-reject",
+            0.9051
+          ],
+          [
+            "yandex-password-changed",
+            0.9075
+          ],
+          [
+            "lease-2",
+            0.9098
+          ],
+          [
+            "hr-3",
+            0.913
+          ]
+        ],
+        "n03": [
+          [
+            "aviasales-deals",
+            0.7598
+          ],
+          [
+            "escalation",
+            0.7782
+          ],
+          [
+            "canteen-menu",
+            0.8075
+          ],
+          [
+            "marketing-report",
+            0.8127
+          ],
+          [
+            "parcel",
+            0.8151
+          ]
+        ],
+        "n04": [
+          [
+            "calendar-demo",
+            0.7285
+          ],
+          [
+            "escalation",
+            0.733
+          ],
+          [
+            "marketing-report",
+            0.7632
+          ],
+          [
+            "1c-maintenance",
+            0.7641
+          ],
+          [
+            "corp-party",
+            0.772
+          ]
+        ],
+        "n05": [
+          [
+            "marketing-report",
+            0.8783
+          ],
+          [
+            "escalation",
+            0.904
+          ],
+          [
+            "parcel",
+            0.9199
+          ],
+          [
+            "corp-party",
+            0.9219
+          ],
+          [
+            "1c-maintenance",
+            0.9293
+          ]
+        ],
+        "n06": [
+          [
+            "canteen-menu",
+            0.709
+          ],
+          [
+            "hr-3",
+            0.7697
+          ],
+          [
+            "inv-245",
+            0.794
+          ],
+          [
+            "technodom-sale",
+            0.7959
+          ],
+          [
+            "office-move",
+            0.7977
+          ]
+        ],
+        "q21": [
+          [
+            "hr-3",
+            0.7068
+          ],
+          [
+            "laptop-request",
+            0.7704
+          ],
+          [
+            "canteen-menu",
+            0.7938
+          ],
+          [
+            "calendar-demo",
+            0.8159
+          ],
+          [
+            "predefense",
+            0.8175
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.5292
+          ],
+          [
+            "hr-3",
+            0.8388
+          ],
+          [
+            "beeline-bill",
+            0.8631
+          ],
+          [
+            "sales-jul",
+            0.8699
+          ],
+          [
+            "autopay-fail",
+            0.8732
+          ]
+        ],
+        "n07": [
+          [
+            "marketing-report",
+            0.8743
+          ],
+          [
+            "aws-invoice",
+            0.8774
+          ],
+          [
+            "sales-aug",
+            0.8832
+          ],
+          [
+            "tax-kz",
+            0.8882
+          ],
+          [
+            "escalation",
+            0.9008
+          ]
+        ],
+        "n08": [
+          [
+            "lease-1",
+            0.8602
+          ],
+          [
+            "canteen-menu",
+            0.8613
+          ],
+          [
+            "kaspi-statement",
+            0.8683
+          ],
+          [
+            "coursera",
+            0.8746
+          ],
+          [
+            "inv-402",
+            0.8773
+          ]
+        ],
+        "n09": [
+          [
+            "auto-reply",
+            0.8285
+          ],
+          [
+            "vpn",
+            0.8571
+          ],
+          [
+            "complaint",
+            0.8626
+          ],
+          [
+            "kolesa",
+            0.872
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "n10": [
+          [
+            "predefense",
+            0.7137
+          ],
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "tax-kz",
+            0.8399
+          ],
+          [
+            "hr-2",
+            0.8552
+          ],
+          [
+            "canteen-menu",
+            0.8613
+          ]
+        ]
+      },
+      "index_seconds": 0.6
+    },
+    "header/text": {
+      "summary": {
+        "recall@5": 0.7954545454545454,
+        "mrr": 0.8181818181818182,
+        "recall@5 search": 0.7083333333333334,
+        "recall@5 email": 0.9
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.583
+          ],
+          [
+            "inv-245",
+            0.8093
+          ],
+          [
+            "inv-318",
+            0.802
+          ],
+          [
+            "beeline-bill",
+            0.9095
+          ]
+        ],
+        "q02": [
+          [
+            "lease-1",
+            0.6363
+          ],
+          [
+            "lease-2",
+            0.6393
+          ],
+          [
+            "cleaning-contract",
+            0.6595
+          ],
+          [
+            "laptops-3",
+            0.8197
+          ],
+          [
+            "laptops-2",
+            0.8979
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.7278
+          ],
+          [
+            "hotel",
+            0.9219
+          ],
+          [
+            "complaint",
+            0.9313
+          ],
+          [
+            "short-call-back",
+            0.8934
+          ]
+        ],
+        "q04": [
+          [
+            "wifi",
+            0.5562
+          ],
+          [
+            "yandex-app-password",
+            0.6838
+          ],
+          [
+            "yandex-password-changed",
+            0.7136
+          ]
+        ],
+        "q05": [
+          [
+            "hr-1",
+            0.7172
+          ],
+          [
+            "hr-3",
+            0.8492
+          ]
+        ],
+        "q06": [
+          [
+            "hr-1",
+            0.6
+          ],
+          [
+            "hr-2",
+            0.7538
+          ],
+          [
+            "hr-3",
+            0.7868
+          ]
+        ],
+        "q07": [
+          [
+            "aws-invoice",
+            0.7482
+          ]
+        ],
+        "q08": [],
+        "q09": [],
+        "q10": [
+          [
+            "sales-aug",
+            0.5281
+          ],
+          [
+            "kaspi-statement",
+            0.6816
+          ],
+          [
+            "beeline-bill",
+            0.5992
+          ],
+          [
+            "sales-jul",
+            0.6373
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6938
+          ]
+        ],
+        "q12": [],
+        "q13": [
+          [
+            "laptops-3",
+            0.5833
+          ],
+          [
+            "laptops-2",
+            0.6999
+          ],
+          [
+            "laptops-1",
+            0.8212
+          ],
+          [
+            "escalation",
+            0.9379
+          ],
+          [
+            "confirm-email",
+            0.882
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.5958
+          ],
+          [
+            "inv-245",
+            0.8054
+          ],
+          [
+            "beeline-bill",
+            0.8522
+          ],
+          [
+            "vpn",
+            0.7938
+          ],
+          [
+            "inv-402",
+            0.8723
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.525
+          ],
+          [
+            "hr-3",
+            0.6802
+          ],
+          [
+            "hr-2",
+            0.723
+          ],
+          [
+            "predefense",
+            0.8957
+          ],
+          [
+            "kolesa",
+            0.8642
+          ]
+        ],
+        "q16": [
+          [
+            "flight",
+            0.6226
+          ],
+          [
+            "flight-old-delay",
+            0.6692
+          ],
+          [
+            "login-code",
+            0.876
+          ],
+          [
+            "kz-meeting",
+            0.8447
+          ],
+          [
+            "predefense",
+            0.7955
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.748
+          ],
+          [
+            "lease-2",
+            0.8438
+          ]
+        ],
+        "q18": [
+          [
+            "complaint",
+            0.8878
+          ],
+          [
+            "delivery-failure",
+            0.8796
+          ],
+          [
+            "aws-invoice",
+            0.9515
+          ],
+          [
+            "langchain-news",
+            0.9439
+          ],
+          [
+            "github-ci",
+            0.9428
+          ]
+        ],
+        "q19": [
+          [
+            "sales-aug",
+            0.5612
+          ],
+          [
+            "sales-jul",
+            0.5672
+          ],
+          [
+            "kolesa",
+            0.8758
+          ],
+          [
+            "kaspi-statement",
+            0.7122
+          ],
+          [
+            "inv-318",
+            0.8302
+          ]
+        ],
+        "q20": [
+          [
+            "bday",
+            0.6729
+          ]
+        ],
+        "n01": [],
+        "n02": [],
+        "n03": [],
+        "n04": [
+          [
+            "calendar-demo",
+            0.7285
+          ],
+          [
+            "kz-meeting",
+            0.9416
+          ],
+          [
+            "1c-maintenance",
+            0.7641
+          ],
+          [
+            "predefense",
+            0.9385
+          ],
+          [
+            "corp-party",
+            0.772
+          ]
+        ],
+        "n05": [
+          [
+            "marketing-report",
+            0.8783
+          ]
+        ],
+        "n06": [],
+        "q21": [
+          [
+            "hr-3",
+            0.7068
+          ],
+          [
+            "calendar-demo",
+            0.8159
+          ],
+          [
+            "tax-ru",
+            0.8302
+          ],
+          [
+            "laptop-request",
+            0.7704
+          ],
+          [
+            "login-code",
+            0.8946
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.5292
+          ],
+          [
+            "hr-3",
+            0.8388
+          ],
+          [
+            "login-code",
+            0.9203
+          ],
+          [
+            "visa",
+            0.8909
+          ],
+          [
+            "autopay-fail",
+            0.8732
+          ]
+        ],
+        "n07": [
+          [
+            "marketing-report",
+            0.8743
+          ]
+        ],
+        "n08": [
+          [
+            "hotel",
+            0.9134
+          ],
+          [
+            "wifi",
+            0.8968
+          ],
+          [
+            "parking",
+            0.8811
+          ],
+          [
+            "flight",
+            0.8868
+          ],
+          [
+            "vpn",
+            0.9604
+          ]
+        ],
+        "n09": [
+          [
+            "complaint",
+            0.8626
+          ],
+          [
+            "auto-reply",
+            0.8285
+          ]
+        ],
+        "n10": [
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "predefense",
+            0.7137
+          ],
+          [
+            "kz-meeting",
+            0.9223
+          ],
+          [
+            "calendar-demo",
+            0.8917
+          ],
+          [
+            "hr-2",
+            0.8552
+          ]
+        ]
+      },
+      "index_seconds": 0.6
+    },
+    "header/hybrid": {
+      "summary": {
+        "recall@5": 0.8636363636363636,
+        "mrr": 0.8136363636363636,
+        "recall@5 search": 0.75,
+        "recall@5 email": 1.0
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.583
+          ],
+          [
+            "inv-318",
+            0.802
+          ],
+          [
+            "inv-245",
+            0.8093
+          ],
+          [
+            "beeline-bill",
+            0.9095
+          ],
+          [
+            "technodom-sale",
+            0.9055
+          ]
+        ],
+        "q02": [
+          [
+            "lease-1",
+            0.6363
+          ],
+          [
+            "lease-2",
+            0.6393
+          ],
+          [
+            "cleaning-contract",
+            0.6595
+          ],
+          [
+            "laptops-3",
+            0.8197
+          ],
+          [
+            "laptops-2",
+            0.8979
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.7278
+          ],
+          [
+            "short-call-back",
+            0.8934
+          ],
+          [
+            "hotel",
+            0.9219
+          ],
+          [
+            "complaint",
+            0.9313
+          ],
+          [
+            "escalation",
+            0.8079
+          ]
+        ],
+        "q04": [
+          [
+            "wifi",
+            0.5562
+          ],
+          [
+            "yandex-app-password",
+            0.6838
+          ],
+          [
+            "yandex-password-changed",
+            0.7136
+          ],
+          [
+            "aviasales-deals",
+            0.7519
+          ],
+          [
+            "escalation",
+            0.771
+          ]
+        ],
+        "q05": [
+          [
+            "hr-1",
+            0.7172
+          ],
+          [
+            "hr-3",
+            0.8492
+          ],
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "laptops-1",
+            0.8526
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "q06": [
+          [
+            "hr-1",
+            0.6
+          ],
+          [
+            "hr-2",
+            0.7538
+          ],
+          [
+            "hr-3",
+            0.7868
+          ],
+          [
+            "sales-aug",
+            0.8934
+          ],
+          [
+            "github-ci",
+            0.901
+          ]
+        ],
+        "q07": [
+          [
+            "aws-invoice",
+            0.7482
+          ],
+          [
+            "tax-ru",
+            0.8868
+          ],
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "q08": [
+          [
+            "hr-2",
+            0.7389
+          ],
+          [
+            "hr-3",
+            0.7739
+          ],
+          [
+            "delivery-failure",
+            0.7788
+          ],
+          [
+            "hr-1",
+            0.7879
+          ],
+          [
+            "escalation",
+            0.8079
+          ]
+        ],
+        "q09": [
+          [
+            "hr-2",
+            0.8995
+          ],
+          [
+            "flight-old-delay",
+            0.9139
+          ],
+          [
+            "inv-402",
+            0.9149
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ],
+          [
+            "laptops-1",
+            1.0
+          ]
+        ],
+        "q10": [
+          [
+            "sales-aug",
+            0.5281
+          ],
+          [
+            "beeline-bill",
+            0.5992
+          ],
+          [
+            "kaspi-statement",
+            0.6816
+          ],
+          [
+            "sales-jul",
+            0.6373
+          ],
+          [
+            "tax-kz",
+            0.8064
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6938
+          ],
+          [
+            "coursera",
+            0.7868
+          ],
+          [
+            "kaspi-statement",
+            0.8322
+          ],
+          [
+            "auto-reply",
+            0.8787
+          ],
+          [
+            "canteen-menu",
+            0.8821
+          ]
+        ],
+        "q12": [
+          [
+            "hr-1",
+            0.8367
+          ],
+          [
+            "yandex-password-changed",
+            0.9075
+          ],
+          [
+            "hr-3",
+            0.913
+          ],
+          [
+            "laptops-1",
+            0.9149
+          ],
+          [
+            "inv-402",
+            0.9149
+          ]
+        ],
+        "q13": [
+          [
+            "laptops-3",
+            0.5833
+          ],
+          [
+            "laptops-2",
+            0.6999
+          ],
+          [
+            "laptops-1",
+            0.8212
+          ],
+          [
+            "confirm-email",
+            0.882
+          ],
+          [
+            "lease-2",
+            0.8864
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.5958
+          ],
+          [
+            "vpn",
+            0.7938
+          ],
+          [
+            "inv-245",
+            0.8054
+          ],
+          [
+            "beeline-bill",
+            0.8522
+          ],
+          [
+            "visa",
+            0.8036
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.525
+          ],
+          [
+            "hr-3",
+            0.6802
+          ],
+          [
+            "hr-2",
+            0.723
+          ],
+          [
+            "calendar-demo",
+            0.7699
+          ],
+          [
+            "corp-party",
+            0.7239
+          ]
+        ],
+        "q16": [
+          [
+            "flight",
+            0.6226
+          ],
+          [
+            "flight-old-delay",
+            0.6692
+          ],
+          [
+            "predefense",
+            0.7955
+          ],
+          [
+            "kz-meeting",
+            0.8447
+          ],
+          [
+            "aviasales-deals",
+            0.8462
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.748
+          ],
+          [
+            "lease-2",
+            0.8438
+          ],
+          [
+            "designer-interview",
+            0.8917
+          ],
+          [
+            "tax-kz",
+            0.8917
+          ],
+          [
+            "hh-vacancies",
+            0.9189
+          ]
+        ],
+        "q18": [
+          [
+            "delivery-failure",
+            0.8796
+          ],
+          [
+            "complaint",
+            0.8878
+          ],
+          [
+            "aws-invoice",
+            0.9515
+          ],
+          [
+            "langchain-news",
+            0.9439
+          ],
+          [
+            "github-ci",
+            0.9428
+          ]
+        ],
+        "q19": [
+          [
+            "sales-aug",
+            0.5612
+          ],
+          [
+            "sales-jul",
+            0.5672
+          ],
+          [
+            "kaspi-statement",
+            0.7122
+          ],
+          [
+            "inv-318",
+            0.8302
+          ],
+          [
+            "laptops-1",
+            0.7854
+          ]
+        ],
+        "q20": [
+          [
+            "bday",
+            0.6729
+          ],
+          [
+            "technodom-sale",
+            0.8147
+          ],
+          [
+            "predefense",
+            0.8773
+          ],
+          [
+            "inv-318",
+            0.8835
+          ],
+          [
+            "inv-245",
+            0.8878
+          ]
+        ],
+        "n01": [
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "n02": [
+          [
+            "hr-1",
+            0.8367
+          ],
+          [
+            "test-task-reject",
+            0.9051
+          ],
+          [
+            "yandex-password-changed",
+            0.9075
+          ],
+          [
+            "lease-2",
+            0.9098
+          ],
+          [
+            "hr-3",
+            0.913
+          ]
+        ],
+        "n03": [
+          [
+            "aviasales-deals",
+            0.7598
+          ],
+          [
+            "escalation",
+            0.7782
+          ],
+          [
+            "canteen-menu",
+            0.8075
+          ],
+          [
+            "marketing-report",
+            0.8127
+          ],
+          [
+            "parcel",
+            0.8151
+          ]
+        ],
+        "n04": [
+          [
+            "calendar-demo",
+            0.7285
+          ],
+          [
+            "1c-maintenance",
+            0.7641
+          ],
+          [
+            "marketing-report",
+            0.7632
+          ],
+          [
+            "corp-party",
+            0.772
+          ],
+          [
+            "hr-1",
+            0.7936
+          ]
+        ],
+        "n05": [
+          [
+            "marketing-report",
+            0.8783
+          ],
+          [
+            "escalation",
+            0.904
+          ],
+          [
+            "parcel",
+            0.9199
+          ],
+          [
+            "corp-party",
+            0.9219
+          ],
+          [
+            "1c-maintenance",
+            0.9293
+          ]
+        ],
+        "n06": [
+          [
+            "canteen-menu",
+            0.709
+          ],
+          [
+            "hr-3",
+            0.7697
+          ],
+          [
+            "inv-245",
+            0.794
+          ],
+          [
+            "technodom-sale",
+            0.7959
+          ],
+          [
+            "office-move",
+            0.7977
+          ]
+        ],
+        "q21": [
+          [
+            "hr-3",
+            0.7068
+          ],
+          [
+            "laptop-request",
+            0.7704
+          ],
+          [
+            "calendar-demo",
+            0.8159
+          ],
+          [
+            "tax-ru",
+            0.8302
+          ],
+          [
+            "predefense",
+            0.8175
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.5292
+          ],
+          [
+            "hr-3",
+            0.8388
+          ],
+          [
+            "autopay-fail",
+            0.8732
+          ],
+          [
+            "visa",
+            0.8909
+          ],
+          [
+            "yandex-app-password",
+            0.8866
+          ]
+        ],
+        "n07": [
+          [
+            "marketing-report",
+            0.8743
+          ],
+          [
+            "aws-invoice",
+            0.8774
+          ],
+          [
+            "sales-aug",
+            0.8832
+          ],
+          [
+            "tax-kz",
+            0.8882
+          ],
+          [
+            "escalation",
+            0.9008
+          ]
+        ],
+        "n08": [
+          [
+            "parking",
+            0.8811
+          ],
+          [
+            "wifi",
+            0.8968
+          ],
+          [
+            "flight",
+            0.8868
+          ],
+          [
+            "hotel",
+            0.9134
+          ],
+          [
+            "vpn",
+            0.9604
+          ]
+        ],
+        "n09": [
+          [
+            "auto-reply",
+            0.8285
+          ],
+          [
+            "complaint",
+            0.8626
+          ],
+          [
+            "vpn",
+            0.8571
+          ],
+          [
+            "kolesa",
+            0.872
+          ],
+          [
+            "beeline-bill",
+            1.0
+          ]
+        ],
+        "n10": [
+          [
+            "predefense",
+            0.7137
+          ],
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "hr-2",
+            0.8552
+          ],
+          [
+            "designer-interview",
+            0.8799
+          ],
+          [
+            "calendar-demo",
+            0.8917
+          ]
+        ]
+      },
+      "index_seconds": 0.6
+    },
+    "no-header/vector": {
+      "summary": {
+        "recall@5": 0.6893939393939394,
+        "mrr": 0.5848484848484848,
+        "recall@5 search": 0.5138888888888888,
+        "recall@5 email": 0.9
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.6756
+          ],
+          [
+            "technodom-sale",
+            0.8174
+          ],
+          [
+            "inv-318",
+            0.8457
+          ],
+          [
+            "inv-245",
+            0.8457
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q02": [
+          [
+            "laptop-request",
+            0.7019
+          ],
+          [
+            "cleaning-contract",
+            0.7019
+          ],
+          [
+            "lease-1",
+            0.7892
+          ],
+          [
+            "laptops-2",
+            0.8075
+          ],
+          [
+            "confirm-email",
+            0.8259
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.6559
+          ],
+          [
+            "short-call-back",
+            0.75
+          ],
+          [
+            "calendar-demo",
+            0.7575
+          ],
+          [
+            "office-move",
+            0.7575
+          ],
+          [
+            "hr-1",
+            0.7764
+          ]
+        ],
+        "q04": [
+          [
+            "yandex-app-password",
+            0.6746
+          ],
+          [
+            "wifi",
+            0.7202
+          ],
+          [
+            "yandex-password-changed",
+            0.7519
+          ],
+          [
+            "aviasales-deals",
+            0.7764
+          ],
+          [
+            "calendar-demo",
+            0.7831
+          ]
+        ],
+        "q05": [
+          [
+            "yandex-password-changed",
+            0.7226
+          ],
+          [
+            "laptops-1",
+            0.7706
+          ],
+          [
+            "hr-1",
+            0.7764
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q06": [
+          [
+            "hr-1",
+            0.6838
+          ],
+          [
+            "hr-3",
+            0.8174
+          ],
+          [
+            "sales-aug",
+            0.8285
+          ],
+          [
+            "github-ci",
+            0.8419
+          ],
+          [
+            "visa",
+            0.8457
+          ]
+        ],
+        "q07": [
+          [
+            "tax-ru",
+            0.8232
+          ],
+          [
+            "aws-invoice",
+            0.8687
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "laptops-1",
+            1.0
+          ]
+        ],
+        "q08": [
+          [
+            "delivery-failure",
+            0.6727
+          ],
+          [
+            "hr-2",
+            0.8492
+          ],
+          [
+            "marketing-report",
+            0.8613
+          ],
+          [
+            "canteen-menu",
+            0.8613
+          ],
+          [
+            "autopay-fail",
+            0.8613
+          ]
+        ],
+        "q09": [
+          [
+            "hr-2",
+            0.8259
+          ],
+          [
+            "flight-old-delay",
+            0.8457
+          ],
+          [
+            "inv-402",
+            0.8675
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q10": [
+          [
+            "beeline-bill",
+            0.6096
+          ],
+          [
+            "short-test",
+            0.6838
+          ],
+          [
+            "kaspi-statement",
+            0.7418
+          ],
+          [
+            "autopay-fail",
+            0.7519
+          ],
+          [
+            "tax-kz",
+            0.7691
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6349
+          ],
+          [
+            "auto-reply",
+            0.7959
+          ],
+          [
+            "hh-vacancies",
+            0.7959
+          ],
+          [
+            "autopay-fail",
+            0.8039
+          ],
+          [
+            "canteen-menu",
+            0.8039
+          ]
+        ],
+        "q12": [
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "inv-402",
+            0.8675
+          ],
+          [
+            "laptops-1",
+            0.8675
+          ],
+          [
+            "hr-1",
+            0.8709
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q13": [
+          [
+            "laptops-2",
+            0.5149
+          ],
+          [
+            "laptops-3",
+            0.6759
+          ],
+          [
+            "laptops-1",
+            0.7774
+          ],
+          [
+            "laptop-request",
+            0.8121
+          ],
+          [
+            "sales-jul",
+            0.8537
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.496
+          ],
+          [
+            "visa",
+            0.748
+          ],
+          [
+            "inv-245",
+            0.748
+          ],
+          [
+            "corp-party",
+            0.7685
+          ],
+          [
+            "technodom-sale",
+            0.7764
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.4071
+          ],
+          [
+            "calendar-demo",
+            0.6141
+          ],
+          [
+            "hr-2",
+            0.6269
+          ],
+          [
+            "hr-3",
+            0.6349
+          ],
+          [
+            "office-move",
+            0.657
+          ]
+        ],
+        "q16": [
+          [
+            "flight-old-delay",
+            0.5553
+          ],
+          [
+            "flight",
+            0.6182
+          ],
+          [
+            "short-fwd",
+            0.8039
+          ],
+          [
+            "login-code",
+            0.8328
+          ],
+          [
+            "confirm-email",
+            0.8328
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.7718
+          ],
+          [
+            "lease-2",
+            0.8664
+          ],
+          [
+            "designer-interview",
+            0.8664
+          ],
+          [
+            "tax-kz",
+            0.8709
+          ],
+          [
+            "confirm-email",
+            0.9246
+          ]
+        ],
+        "q18": [
+          [
+            "delivery-failure",
+            0.8664
+          ],
+          [
+            "langchain-news",
+            0.901
+          ],
+          [
+            "inv-402",
+            0.9063
+          ],
+          [
+            "github-ci",
+            0.9087
+          ],
+          [
+            "complaint",
+            0.9109
+          ]
+        ],
+        "q19": [
+          [
+            "sales-jul",
+            0.6344
+          ],
+          [
+            "sales-aug",
+            0.6471
+          ],
+          [
+            "beeline-bill",
+            0.6824
+          ],
+          [
+            "kaspi-statement",
+            0.7199
+          ],
+          [
+            "inv-402",
+            0.7218
+          ]
+        ],
+        "q20": [
+          [
+            "technodom-sale",
+            0.7852
+          ],
+          [
+            "bday",
+            0.7982
+          ],
+          [
+            "short-thanks",
+            0.8399
+          ],
+          [
+            "laptops-3",
+            0.8518
+          ],
+          [
+            "office-move",
+            0.8655
+          ]
+        ],
+        "n01": [
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "inv-245",
+            1.0
+          ],
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "n02": [
+          [
+            "test-task-reject",
+            0.8399
+          ],
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "lease-2",
+            0.8457
+          ],
+          [
+            "vpn",
+            0.8557
+          ],
+          [
+            "laptops-1",
+            0.8675
+          ]
+        ],
+        "n03": [
+          [
+            "canteen-menu",
+            0.6797
+          ],
+          [
+            "hr-3",
+            0.7019
+          ],
+          [
+            "aviasales-deals",
+            0.7113
+          ],
+          [
+            "office-move",
+            0.7199
+          ],
+          [
+            "calendar-demo",
+            0.7199
+          ]
+        ],
+        "n04": [
+          [
+            "calendar-demo",
+            0.5954
+          ],
+          [
+            "hr-1",
+            0.6736
+          ],
+          [
+            "escalation",
+            0.6815
+          ],
+          [
+            "office-move",
+            0.6966
+          ],
+          [
+            "designer-interview",
+            0.7214
+          ]
+        ],
+        "n05": [
+          [
+            "office-move",
+            0.8787
+          ],
+          [
+            "calendar-demo",
+            0.8787
+          ],
+          [
+            "hr-1",
+            0.8882
+          ],
+          [
+            "escalation",
+            0.8909
+          ],
+          [
+            "parcel",
+            0.9209
+          ]
+        ],
+        "n06": [
+          [
+            "short-attach",
+            0.748
+          ],
+          [
+            "canteen-menu",
+            0.7579
+          ],
+          [
+            "laptops-3",
+            0.7667
+          ],
+          [
+            "inv-245",
+            0.8095
+          ],
+          [
+            "hr-3",
+            0.831
+          ]
+        ],
+        "q21": [
+          [
+            "laptop-request",
+            0.7718
+          ],
+          [
+            "hr-3",
+            0.7718
+          ],
+          [
+            "calendar-demo",
+            0.7856
+          ],
+          [
+            "bday",
+            0.7856
+          ],
+          [
+            "1c-maintenance",
+            0.7917
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.6659
+          ],
+          [
+            "hr-3",
+            0.793
+          ],
+          [
+            "visa",
+            0.825
+          ],
+          [
+            "sales-jul",
+            0.8388
+          ],
+          [
+            "autopay-fail",
+            0.8518
+          ]
+        ],
+        "n07": [
+          [
+            "auto-reply",
+            0.8509
+          ],
+          [
+            "hh-vacancies",
+            0.8509
+          ],
+          [
+            "canteen-menu",
+            0.8568
+          ],
+          [
+            "tax-kz",
+            0.8667
+          ],
+          [
+            "office-move",
+            0.8748
+          ]
+        ],
+        "n08": [
+          [
+            "canteen-menu",
+            0.7692
+          ],
+          [
+            "parking",
+            0.7776
+          ],
+          [
+            "lease-1",
+            0.7975
+          ],
+          [
+            "flight",
+            0.8091
+          ],
+          [
+            "inv-402",
+            0.8091
+          ]
+        ],
+        "n09": [
+          [
+            "auto-reply",
+            0.7113
+          ],
+          [
+            "vpn",
+            0.75
+          ],
+          [
+            "kolesa",
+            0.7575
+          ],
+          [
+            "complaint",
+            0.7818
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "n10": [
+          [
+            "predefense",
+            0.7455
+          ],
+          [
+            "tax-kz",
+            0.7852
+          ],
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "hr-2",
+            0.8328
+          ],
+          [
+            "canteen-menu",
+            0.8462
+          ]
+        ]
+      },
+      "index_seconds": 0.8
+    },
+    "no-header/text": {
+      "summary": {
+        "recall@5": 0.7651515151515151,
+        "mrr": 0.7212121212121212,
+        "recall@5 search": 0.5972222222222222,
+        "recall@5 email": 0.9666666666666667
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.6756
+          ],
+          [
+            "inv-245",
+            0.8457
+          ],
+          [
+            "inv-318",
+            0.8457
+          ]
+        ],
+        "q02": [
+          [
+            "lease-1",
+            0.7892
+          ],
+          [
+            "cleaning-contract",
+            0.7019
+          ],
+          [
+            "lease-2",
+            0.8457
+          ],
+          [
+            "laptops-2",
+            0.8075
+          ],
+          [
+            "laptops-3",
+            0.8457
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.6559
+          ],
+          [
+            "complaint",
+            0.8909
+          ],
+          [
+            "short-call-back",
+            0.75
+          ]
+        ],
+        "q04": [
+          [
+            "wifi",
+            0.7202
+          ],
+          [
+            "yandex-app-password",
+            0.6746
+          ],
+          [
+            "yandex-password-changed",
+            0.7519
+          ]
+        ],
+        "q05": [],
+        "q06": [
+          [
+            "hr-1",
+            0.6838
+          ],
+          [
+            "hr-3",
+            0.8174
+          ]
+        ],
+        "q07": [
+          [
+            "aws-invoice",
+            0.8687
+          ]
+        ],
+        "q08": [],
+        "q09": [],
+        "q10": [
+          [
+            "kaspi-statement",
+            0.7418
+          ],
+          [
+            "beeline-bill",
+            0.6096
+          ],
+          [
+            "sales-aug",
+            0.7831
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6349
+          ]
+        ],
+        "q12": [],
+        "q13": [
+          [
+            "laptops-2",
+            0.5149
+          ],
+          [
+            "laptops-3",
+            0.6759
+          ],
+          [
+            "laptops-1",
+            0.7774
+          ],
+          [
+            "cleaning-contract",
+            0.9374
+          ],
+          [
+            "lease-2",
+            0.9352
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.496
+          ],
+          [
+            "inv-245",
+            0.748
+          ],
+          [
+            "inv-402",
+            0.8675
+          ],
+          [
+            "beeline-bill",
+            0.811
+          ],
+          [
+            "parking",
+            0.8457
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.4071
+          ],
+          [
+            "hr-2",
+            0.6269
+          ],
+          [
+            "predefense",
+            0.8783
+          ],
+          [
+            "1c-maintenance",
+            0.75
+          ],
+          [
+            "laptops-2",
+            0.8821
+          ]
+        ],
+        "q16": [
+          [
+            "flight",
+            0.6182
+          ],
+          [
+            "flight-old-delay",
+            0.5553
+          ],
+          [
+            "login-code",
+            0.8328
+          ],
+          [
+            "aviasales-deals",
+            0.8613
+          ],
+          [
+            "1c-maintenance",
+            0.9346
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.7718
+          ],
+          [
+            "lease-2",
+            0.8664
+          ]
+        ],
+        "q18": [
+          [
+            "delivery-failure",
+            0.8664
+          ],
+          [
+            "aws-invoice",
+            0.9242
+          ],
+          [
+            "complaint",
+            0.9109
+          ],
+          [
+            "langchain-news",
+            0.901
+          ],
+          [
+            "github-ci",
+            0.9087
+          ]
+        ],
+        "q19": [
+          [
+            "sales-aug",
+            0.6471
+          ],
+          [
+            "sales-jul",
+            0.6344
+          ],
+          [
+            "kaspi-statement",
+            0.7199
+          ],
+          [
+            "kolesa",
+            0.8824
+          ],
+          [
+            "inv-318",
+            0.7354
+          ]
+        ],
+        "q20": [
+          [
+            "bday",
+            0.7982
+          ]
+        ],
+        "n01": [],
+        "n02": [],
+        "n03": [],
+        "n04": [
+          [
+            "1c-maintenance",
+            0.7543
+          ],
+          [
+            "calendar-demo",
+            0.5954
+          ],
+          [
+            "predefense",
+            0.9043
+          ],
+          [
+            "hr-1",
+            0.6736
+          ],
+          [
+            "kz-meeting",
+            0.9443
+          ]
+        ],
+        "n05": [],
+        "n06": [],
+        "q21": [
+          [
+            "calendar-demo",
+            0.7856
+          ],
+          [
+            "tax-ru",
+            0.8232
+          ],
+          [
+            "hr-3",
+            0.7718
+          ],
+          [
+            "laptops-2",
+            0.8821
+          ],
+          [
+            "predefense",
+            0.7972
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.6659
+          ],
+          [
+            "visa",
+            0.825
+          ],
+          [
+            "designer-interview",
+            0.9286
+          ],
+          [
+            "coursera",
+            0.8571
+          ],
+          [
+            "autopay-fail",
+            0.8518
+          ]
+        ],
+        "n07": [],
+        "n08": [
+          [
+            "hotel",
+            0.8462
+          ],
+          [
+            "parking",
+            0.7776
+          ],
+          [
+            "flight",
+            0.8091
+          ],
+          [
+            "wifi",
+            0.8843
+          ],
+          [
+            "vpn",
+            0.9307
+          ]
+        ],
+        "n09": [
+          [
+            "complaint",
+            0.7818
+          ],
+          [
+            "auto-reply",
+            0.7113
+          ]
+        ],
+        "n10": [
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "predefense",
+            0.7455
+          ],
+          [
+            "hr-2",
+            0.8328
+          ],
+          [
+            "designer-interview",
+            0.8518
+          ],
+          [
+            "hr-1",
+            0.876
+          ]
+        ]
+      },
+      "index_seconds": 0.8
+    },
+    "no-header/hybrid": {
+      "summary": {
+        "recall@5": 0.803030303030303,
+        "mrr": 0.6871212121212121,
+        "recall@5 search": 0.6388888888888888,
+        "recall@5 email": 1.0
+      },
+      "runs": {
+        "q01": [
+          [
+            "inv-402",
+            0.6756
+          ],
+          [
+            "inv-245",
+            0.8457
+          ],
+          [
+            "inv-318",
+            0.8457
+          ],
+          [
+            "technodom-sale",
+            0.8174
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q02": [
+          [
+            "lease-1",
+            0.7892
+          ],
+          [
+            "cleaning-contract",
+            0.7019
+          ],
+          [
+            "laptops-2",
+            0.8075
+          ],
+          [
+            "lease-2",
+            0.8457
+          ],
+          [
+            "laptops-3",
+            0.8457
+          ]
+        ],
+        "q03": [
+          [
+            "flight",
+            0.6559
+          ],
+          [
+            "short-call-back",
+            0.75
+          ],
+          [
+            "complaint",
+            0.8909
+          ],
+          [
+            "calendar-demo",
+            0.7575
+          ],
+          [
+            "office-move",
+            0.7575
+          ]
+        ],
+        "q04": [
+          [
+            "yandex-app-password",
+            0.6746
+          ],
+          [
+            "wifi",
+            0.7202
+          ],
+          [
+            "yandex-password-changed",
+            0.7519
+          ],
+          [
+            "aviasales-deals",
+            0.7764
+          ],
+          [
+            "calendar-demo",
+            0.7831
+          ]
+        ],
+        "q05": [
+          [
+            "yandex-password-changed",
+            0.7226
+          ],
+          [
+            "laptops-1",
+            0.7706
+          ],
+          [
+            "hr-1",
+            0.7764
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q06": [
+          [
+            "hr-1",
+            0.6838
+          ],
+          [
+            "hr-3",
+            0.8174
+          ],
+          [
+            "sales-aug",
+            0.8285
+          ],
+          [
+            "github-ci",
+            0.8419
+          ],
+          [
+            "visa",
+            0.8457
+          ]
+        ],
+        "q07": [
+          [
+            "aws-invoice",
+            0.8687
+          ],
+          [
+            "tax-ru",
+            0.8232
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ],
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "laptops-1",
+            1.0
+          ]
+        ],
+        "q08": [
+          [
+            "delivery-failure",
+            0.6727
+          ],
+          [
+            "hr-2",
+            0.8492
+          ],
+          [
+            "marketing-report",
+            0.8613
+          ],
+          [
+            "canteen-menu",
+            0.8613
+          ],
+          [
+            "autopay-fail",
+            0.8613
+          ]
+        ],
+        "q09": [
+          [
+            "hr-2",
+            0.8259
+          ],
+          [
+            "flight-old-delay",
+            0.8457
+          ],
+          [
+            "inv-402",
+            0.8675
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q10": [
+          [
+            "beeline-bill",
+            0.6096
+          ],
+          [
+            "kaspi-statement",
+            0.7418
+          ],
+          [
+            "sales-aug",
+            0.7831
+          ],
+          [
+            "short-test",
+            0.6838
+          ],
+          [
+            "autopay-fail",
+            0.7519
+          ]
+        ],
+        "q11": [
+          [
+            "tax-kz",
+            0.6349
+          ],
+          [
+            "auto-reply",
+            0.7959
+          ],
+          [
+            "hh-vacancies",
+            0.7959
+          ],
+          [
+            "autopay-fail",
+            0.8039
+          ],
+          [
+            "canteen-menu",
+            0.8039
+          ]
+        ],
+        "q12": [
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "inv-402",
+            0.8675
+          ],
+          [
+            "laptops-1",
+            0.8675
+          ],
+          [
+            "hr-1",
+            0.8709
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "q13": [
+          [
+            "laptops-2",
+            0.5149
+          ],
+          [
+            "laptops-3",
+            0.6759
+          ],
+          [
+            "laptops-1",
+            0.7774
+          ],
+          [
+            "confirm-email",
+            0.8537
+          ],
+          [
+            "lease-2",
+            0.9352
+          ]
+        ],
+        "q14": [
+          [
+            "inv-318",
+            0.496
+          ],
+          [
+            "inv-245",
+            0.748
+          ],
+          [
+            "visa",
+            0.748
+          ],
+          [
+            "beeline-bill",
+            0.811
+          ],
+          [
+            "corp-party",
+            0.7685
+          ]
+        ],
+        "q15": [
+          [
+            "hr-1",
+            0.4071
+          ],
+          [
+            "hr-2",
+            0.6269
+          ],
+          [
+            "hr-3",
+            0.6349
+          ],
+          [
+            "calendar-demo",
+            0.6141
+          ],
+          [
+            "1c-maintenance",
+            0.75
+          ]
+        ],
+        "q16": [
+          [
+            "flight-old-delay",
+            0.5553
+          ],
+          [
+            "flight",
+            0.6182
+          ],
+          [
+            "login-code",
+            0.8328
+          ],
+          [
+            "aviasales-deals",
+            0.8613
+          ],
+          [
+            "delivered",
+            0.9164
+          ]
+        ],
+        "q17": [
+          [
+            "lease-1",
+            0.7718
+          ],
+          [
+            "lease-2",
+            0.8664
+          ],
+          [
+            "designer-interview",
+            0.8664
+          ],
+          [
+            "tax-kz",
+            0.8709
+          ],
+          [
+            "confirm-email",
+            0.9246
+          ]
+        ],
+        "q18": [
+          [
+            "delivery-failure",
+            0.8664
+          ],
+          [
+            "langchain-news",
+            0.901
+          ],
+          [
+            "aws-invoice",
+            0.9242
+          ],
+          [
+            "complaint",
+            0.9109
+          ],
+          [
+            "github-ci",
+            0.9087
+          ]
+        ],
+        "q19": [
+          [
+            "sales-jul",
+            0.6344
+          ],
+          [
+            "sales-aug",
+            0.6471
+          ],
+          [
+            "kaspi-statement",
+            0.7199
+          ],
+          [
+            "laptops-1",
+            0.7218
+          ],
+          [
+            "inv-402",
+            0.7218
+          ]
+        ],
+        "q20": [
+          [
+            "bday",
+            0.7982
+          ],
+          [
+            "technodom-sale",
+            0.7852
+          ],
+          [
+            "short-thanks",
+            0.8399
+          ],
+          [
+            "laptops-3",
+            0.8518
+          ],
+          [
+            "office-move",
+            0.8655
+          ]
+        ],
+        "n01": [
+          [
+            "inv-402",
+            1.0
+          ],
+          [
+            "aws-invoice",
+            1.0
+          ],
+          [
+            "inv-245",
+            1.0
+          ],
+          [
+            "inv-318",
+            1.0
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "n02": [
+          [
+            "test-task-reject",
+            0.8399
+          ],
+          [
+            "yandex-password-changed",
+            0.8399
+          ],
+          [
+            "lease-2",
+            0.8457
+          ],
+          [
+            "vpn",
+            0.8557
+          ],
+          [
+            "laptops-1",
+            0.8675
+          ]
+        ],
+        "n03": [
+          [
+            "canteen-menu",
+            0.6797
+          ],
+          [
+            "hr-3",
+            0.7019
+          ],
+          [
+            "aviasales-deals",
+            0.7113
+          ],
+          [
+            "office-move",
+            0.7199
+          ],
+          [
+            "calendar-demo",
+            0.7199
+          ]
+        ],
+        "n04": [
+          [
+            "calendar-demo",
+            0.5954
+          ],
+          [
+            "hr-1",
+            0.6736
+          ],
+          [
+            "1c-maintenance",
+            0.7543
+          ],
+          [
+            "designer-interview",
+            0.7214
+          ],
+          [
+            "hr-2",
+            0.7485
+          ]
+        ],
+        "n05": [
+          [
+            "office-move",
+            0.8787
+          ],
+          [
+            "calendar-demo",
+            0.8787
+          ],
+          [
+            "hr-1",
+            0.8882
+          ],
+          [
+            "escalation",
+            0.8909
+          ],
+          [
+            "parcel",
+            0.9209
+          ]
+        ],
+        "n06": [
+          [
+            "short-attach",
+            0.748
+          ],
+          [
+            "canteen-menu",
+            0.7579
+          ],
+          [
+            "laptops-3",
+            0.7667
+          ],
+          [
+            "inv-245",
+            0.8095
+          ],
+          [
+            "hr-3",
+            0.831
+          ]
+        ],
+        "q21": [
+          [
+            "calendar-demo",
+            0.7856
+          ],
+          [
+            "hr-3",
+            0.7718
+          ],
+          [
+            "laptop-request",
+            0.7718
+          ],
+          [
+            "tax-ru",
+            0.8232
+          ],
+          [
+            "predefense",
+            0.7972
+          ]
+        ],
+        "q22": [
+          [
+            "tax-ru",
+            0.6659
+          ],
+          [
+            "visa",
+            0.825
+          ],
+          [
+            "coursera",
+            0.8571
+          ],
+          [
+            "autopay-fail",
+            0.8518
+          ],
+          [
+            "hr-3",
+            0.793
+          ]
+        ],
+        "n07": [
+          [
+            "auto-reply",
+            0.8509
+          ],
+          [
+            "hh-vacancies",
+            0.8509
+          ],
+          [
+            "canteen-menu",
+            0.8568
+          ],
+          [
+            "tax-kz",
+            0.8667
+          ],
+          [
+            "office-move",
+            0.8748
+          ]
+        ],
+        "n08": [
+          [
+            "parking",
+            0.7776
+          ],
+          [
+            "flight",
+            0.8091
+          ],
+          [
+            "hotel",
+            0.8462
+          ],
+          [
+            "wifi",
+            0.8843
+          ],
+          [
+            "vpn",
+            0.9307
+          ]
+        ],
+        "n09": [
+          [
+            "auto-reply",
+            0.7113
+          ],
+          [
+            "complaint",
+            0.7818
+          ],
+          [
+            "vpn",
+            0.75
+          ],
+          [
+            "kolesa",
+            0.7575
+          ],
+          [
+            "kaspi-statement",
+            1.0
+          ]
+        ],
+        "n10": [
+          [
+            "predefense",
+            0.7455
+          ],
+          [
+            "1c-maintenance",
+            0.8039
+          ],
+          [
+            "hr-2",
+            0.8328
+          ],
+          [
+            "designer-interview",
+            0.8518
+          ],
+          [
+            "hr-1",
+            0.876
+          ]
+        ]
+      },
+      "index_seconds": 0.8
+    }
+  },
+  "rules": [
+    {
+      "max_distance": null,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.7272727272727273,
+      "false_context": 1.0,
+      "utility": -0.7803030303030304
+    },
+    {
+      "max_distance": null,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.7272727272727273,
+      "false_context": 1.0,
+      "utility": -0.7803030303030304
+    },
+    {
+      "max_distance": null,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.8181818181818181,
+      "false_context": 1.0,
+      "utility": -0.8409090909090909
+    },
+    {
+      "max_distance": null,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 1.0,
+      "utility": -0.446969696969697
+    },
+    {
+      "max_distance": null,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 1.0,
+      "utility": -0.446969696969697
+    },
+    {
+      "max_distance": null,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": null,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": null,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": null,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 1.0,
+      "utility": -0.4772727272727273
+    },
+    {
+      "max_distance": null,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    },
+    {
+      "max_distance": null,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    },
+    {
+      "max_distance": null,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.45454545454545453,
+      "false_context": 1.0,
+      "utility": -0.49242424242424243
+    },
+    {
+      "max_distance": null,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 1.0,
+      "utility": -0.5227272727272727
+    },
+    {
+      "max_distance": null,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 1.0,
+      "utility": -0.5227272727272727
+    },
+    {
+      "max_distance": null,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    },
+    {
+      "max_distance": 0.525,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.525,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.01515151515151515,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.01515151515151515
+    },
+    {
+      "max_distance": 0.549,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.549,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.10606060606060606,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.10606060606060606
+    },
+    {
+      "max_distance": 0.573,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.573,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.19696969696969696,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.19696969696969696
+    },
+    {
+      "max_distance": 0.596,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.596,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.30303030303030304,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.62,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.3181818181818182,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.62,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.3181818181818182,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.62,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.3181818181818182,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.30303030303030304
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.62,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.3181818181818182,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.3181818181818182
+    },
+    {
+      "max_distance": 0.644,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.644,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.644,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.644,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.667,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.13636363636363635,
+      "false_context": 0.0,
+      "utility": 0.3636363636363636
+    },
+    {
+      "max_distance": 0.667,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.13636363636363635,
+      "false_context": 0.0,
+      "utility": 0.3636363636363636
+    },
+    {
+      "max_distance": 0.667,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.13636363636363635,
+      "false_context": 0.0,
+      "utility": 0.3636363636363636
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.40909090909090906
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.667,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.40909090909090906,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.3939393939393939
+    },
+    {
+      "max_distance": 0.691,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.46969696969696967,
+      "noise": 0.2727272727272727,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.691,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.46969696969696967,
+      "noise": 0.2727272727272727,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.691,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.46969696969696967,
+      "noise": 0.2727272727272727,
+      "false_context": 0.0,
+      "utility": 0.3787878787878788
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.45454545454545453,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.45454545454545453
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.45454545454545453,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.45454545454545453
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.45454545454545453,
+      "noise": 0,
+      "false_context": 0.0,
+      "utility": 0.45454545454545453
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.045454545454545456,
+      "false_context": 0.0,
+      "utility": 0.4393939393939394
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.4242424242424242
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.4242424242424242
+    },
+    {
+      "max_distance": 0.691,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.45454545454545453,
+      "noise": 0.09090909090909091,
+      "false_context": 0.0,
+      "utility": 0.4242424242424242
+    },
+    {
+      "max_distance": 0.715,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.5075757575757576,
+      "noise": 0.36363636363636365,
+      "false_context": 0.2,
+      "utility": 0.18636363636363634
+    },
+    {
+      "max_distance": 0.715,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.5075757575757576,
+      "noise": 0.36363636363636365,
+      "false_context": 0.2,
+      "utility": 0.18636363636363634
+    },
+    {
+      "max_distance": 0.715,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.5075757575757576,
+      "noise": 0.36363636363636365,
+      "false_context": 0.2,
+      "utility": 0.18636363636363634
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.045454545454545456,
+      "false_context": 0.2,
+      "utility": 0.26212121212121214
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.045454545454545456,
+      "false_context": 0.2,
+      "utility": 0.26212121212121214
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.045454545454545456,
+      "false_context": 0.2,
+      "utility": 0.26212121212121214
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.09090909090909091,
+      "false_context": 0.2,
+      "utility": 0.246969696969697
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.13636363636363635,
+      "false_context": 0.2,
+      "utility": 0.2318181818181818
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.13636363636363635,
+      "false_context": 0.2,
+      "utility": 0.2318181818181818
+    },
+    {
+      "max_distance": 0.715,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.4772727272727273,
+      "noise": 0.13636363636363635,
+      "false_context": 0.2,
+      "utility": 0.2318181818181818
+    },
+    {
+      "max_distance": 0.739,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.5909090909090909,
+      "noise": 0.4090909090909091,
+      "false_context": 0.3,
+      "utility": 0.1545454545454546
+    },
+    {
+      "max_distance": 0.739,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.5909090909090909,
+      "noise": 0.4090909090909091,
+      "false_context": 0.3,
+      "utility": 0.1545454545454546
+    },
+    {
+      "max_distance": 0.739,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.5757575757575758,
+      "noise": 0.4090909090909091,
+      "false_context": 0.3,
+      "utility": 0.13939393939393946
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.09090909090909091,
+      "false_context": 0.3,
+      "utility": 0.21515151515151515
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.09090909090909091,
+      "false_context": 0.3,
+      "utility": 0.21515151515151515
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.045454545454545456,
+      "false_context": 0.3,
+      "utility": 0.2303030303030303
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.13636363636363635,
+      "false_context": 0.3,
+      "utility": 0.19999999999999996
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.13636363636363635,
+      "false_context": 0.3,
+      "utility": 0.19999999999999996
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.09090909090909091,
+      "false_context": 0.3,
+      "utility": 0.21515151515151515
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.13636363636363635,
+      "false_context": 0.3,
+      "utility": 0.19999999999999996
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.13636363636363635,
+      "false_context": 0.3,
+      "utility": 0.19999999999999996
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.09090909090909091,
+      "false_context": 0.3,
+      "utility": 0.21515151515151515
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.18181818181818182,
+      "false_context": 0.3,
+      "utility": 0.18484848484848482
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.18181818181818182,
+      "false_context": 0.3,
+      "utility": 0.18484848484848482
+    },
+    {
+      "max_distance": 0.739,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.5454545454545454,
+      "noise": 0.13636363636363635,
+      "false_context": 0.3,
+      "utility": 0.19999999999999996
+    },
+    {
+      "max_distance": 0.762,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.6742424242424242,
+      "noise": 0.4090909090909091,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.762,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.6742424242424242,
+      "noise": 0.4090909090909091,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.762,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.6439393939393939,
+      "noise": 0.4090909090909091,
+      "false_context": 0.4,
+      "utility": 0.10757575757575755
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.045454545454545456,
+      "false_context": 0.4,
+      "utility": 0.1984848484848485
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.4,
+      "utility": 0.15303030303030296
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.4,
+      "utility": 0.15303030303030296
+    },
+    {
+      "max_distance": 0.762,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.786,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.6742424242424242,
+      "noise": 0.5454545454545454,
+      "false_context": 0.4,
+      "utility": 0.09242424242424241
+    },
+    {
+      "max_distance": 0.786,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.6742424242424242,
+      "noise": 0.5454545454545454,
+      "false_context": 0.4,
+      "utility": 0.09242424242424241
+    },
+    {
+      "max_distance": 0.786,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.6439393939393939,
+      "noise": 0.5454545454545454,
+      "false_context": 0.4,
+      "utility": 0.06212121212121213
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.4,
+      "utility": 0.15303030303030296
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.4,
+      "utility": 0.15303030303030296
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.4,
+      "utility": 0.12272727272727268
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.4,
+      "utility": 0.12272727272727268
+    },
+    {
+      "max_distance": 0.786,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.81,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.6893939393939394,
+      "noise": 0.8636363636363636,
+      "false_context": 0.4,
+      "utility": 0.001515151515151525
+    },
+    {
+      "max_distance": 0.81,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.6893939393939394,
+      "noise": 0.8636363636363636,
+      "false_context": 0.4,
+      "utility": 0.001515151515151525
+    },
+    {
+      "max_distance": 0.81,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.9090909090909091,
+      "false_context": 0.4,
+      "utility": -0.043939393939394
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.4,
+      "utility": 0.18333333333333335
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.4,
+      "utility": 0.15303030303030296
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.4,
+      "utility": 0.1681818181818182
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.4,
+      "utility": 0.13787878787878782
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.4,
+      "utility": 0.12272727272727268
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.4,
+      "utility": 0.12272727272727268
+    },
+    {
+      "max_distance": 0.81,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.4,
+      "utility": 0.12272727272727268
+    },
+    {
+      "max_distance": 0.834,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7045454545454546,
+      "noise": 1,
+      "false_context": 0.5,
+      "utility": -0.12878787878787873
+    },
+    {
+      "max_distance": 0.834,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7045454545454546,
+      "noise": 1,
+      "false_context": 0.5,
+      "utility": -0.12878787878787873
+    },
+    {
+      "max_distance": 0.834,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.6742424242424242,
+      "noise": 1.0454545454545454,
+      "false_context": 0.5,
+      "utility": -0.17424242424242425
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.5,
+      "utility": 0.08333333333333337
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.09090909090909091,
+      "false_context": 0.5,
+      "utility": 0.08333333333333337
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.5,
+      "utility": 0.05303030303030298
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.5,
+      "utility": 0.06818181818181823
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.5,
+      "utility": 0.06818181818181823
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.5,
+      "utility": 0.037878787878787845
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.5,
+      "utility": 0.037878787878787845
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.5,
+      "utility": 0.037878787878787845
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.5,
+      "utility": 0.037878787878787845
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.5,
+      "utility": 0.022727272727272707
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.5,
+      "utility": 0.022727272727272707
+    },
+    {
+      "max_distance": 0.834,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.5,
+      "utility": 0.022727272727272707
+    },
+    {
+      "max_distance": 0.858,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.75,
+      "noise": 1.1818181818181819,
+      "false_context": 0.6,
+      "utility": -0.24393939393939396
+    },
+    {
+      "max_distance": 0.858,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.75,
+      "noise": 1.1818181818181819,
+      "false_context": 0.6,
+      "utility": -0.24393939393939396
+    },
+    {
+      "max_distance": 0.858,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7196969696969697,
+      "noise": 1.2272727272727273,
+      "false_context": 0.6,
+      "utility": -0.28939393939393937
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.6,
+      "utility": -0.031818181818181746
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.13636363636363635,
+      "false_context": 0.6,
+      "utility": -0.031818181818181746
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.6,
+      "utility": -0.06212121212121213
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.6,
+      "utility": -0.046969696969696995
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.6,
+      "utility": -0.046969696969696995
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.6,
+      "utility": -0.07727272727272727
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.6,
+      "utility": -0.07727272727272727
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.6,
+      "utility": -0.07727272727272727
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.6,
+      "utility": -0.07727272727272727
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.6,
+      "utility": -0.09242424242424241
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.6,
+      "utility": -0.09242424242424241
+    },
+    {
+      "max_distance": 0.858,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.6,
+      "utility": -0.09242424242424241
+    },
+    {
+      "max_distance": 0.881,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.75,
+      "noise": 1.3181818181818181,
+      "false_context": 0.9,
+      "utility": -0.5893939393939394
+    },
+    {
+      "max_distance": 0.881,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.75,
+      "noise": 1.3181818181818181,
+      "false_context": 0.9,
+      "utility": -0.5893939393939394
+    },
+    {
+      "max_distance": 0.881,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7196969696969697,
+      "noise": 1.3636363636363635,
+      "false_context": 0.9,
+      "utility": -0.6348484848484848
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.18181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.2727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.22727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.881,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6136363636363636,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.905,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.4545454545454546,
+      "false_context": 0.9,
+      "utility": -0.5893939393939395
+    },
+    {
+      "max_distance": 0.905,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.4545454545454546,
+      "false_context": 0.9,
+      "utility": -0.5893939393939395
+    },
+    {
+      "max_distance": 0.905,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.5,
+      "false_context": 0.9,
+      "utility": -0.6348484848484849
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.22727272727272727,
+      "false_context": 0.9,
+      "utility": -0.31666666666666676
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.22727272727272727,
+      "false_context": 0.9,
+      "utility": -0.31666666666666676
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.2727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3318181818181819
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.2727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3318181818181819
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.2727272727272727,
+      "false_context": 0.9,
+      "utility": -0.3318181818181819
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.905,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.929,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.929,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.929,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.7272727272727273,
+      "false_context": 0.9,
+      "utility": -0.7106060606060607
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.45454545454545453,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.929,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.953,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.953,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.953,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.7272727272727273,
+      "false_context": 0.9,
+      "utility": -0.7106060606060607
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.45454545454545453,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.953,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.976,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.976,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.6818181818181819,
+      "false_context": 0.9,
+      "utility": -0.6651515151515153
+    },
+    {
+      "max_distance": 0.976,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.7272727272727273,
+      "false_context": 0.9,
+      "utility": -0.7106060606060607
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 0.9,
+      "utility": -0.34696969696969704
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 0.9,
+      "utility": -0.3621212121212122
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 0.9,
+      "utility": -0.3772727272727273
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.45454545454545453,
+      "false_context": 0.9,
+      "utility": -0.39242424242424245
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 0.9,
+      "utility": -0.42272727272727273
+    },
+    {
+      "max_distance": 0.976,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 0.9,
+      "utility": -0.4075757575757576
+    },
+    {
+      "max_distance": 1.0,
+      "margin": null,
+      "min_body": 0,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.7272727272727273,
+      "false_context": 1.0,
+      "utility": -0.7803030303030304
+    },
+    {
+      "max_distance": 1.0,
+      "margin": null,
+      "min_body": 30,
+      "recall@3": 0.7954545454545454,
+      "noise": 1.7272727272727273,
+      "false_context": 1.0,
+      "utility": -0.7803030303030304
+    },
+    {
+      "max_distance": 1.0,
+      "margin": null,
+      "min_body": 60,
+      "recall@3": 0.7651515151515151,
+      "noise": 1.8181818181818181,
+      "false_context": 1.0,
+      "utility": -0.8409090909090909
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.02,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 1.0,
+      "utility": -0.446969696969697
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.02,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.3181818181818182,
+      "false_context": 1.0,
+      "utility": -0.446969696969697
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.02,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.03,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.03,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.36363636363636365,
+      "false_context": 1.0,
+      "utility": -0.46212121212121215
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.03,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.4090909090909091,
+      "false_context": 1.0,
+      "utility": -0.4772727272727273
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.04,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.04,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.04,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.45454545454545453,
+      "false_context": 1.0,
+      "utility": -0.49242424242424243
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.06,
+      "min_body": 0,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 1.0,
+      "utility": -0.5227272727272727
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.06,
+      "min_body": 30,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5454545454545454,
+      "false_context": 1.0,
+      "utility": -0.5227272727272727
+    },
+    {
+      "max_distance": 1.0,
+      "margin": 0.06,
+      "min_body": 60,
+      "recall@3": 0.6590909090909091,
+      "noise": 0.5,
+      "false_context": 1.0,
+      "utility": -0.5075757575757576
+    }
+  ],
+  "production_rule": {
+    "max_distance": 0.17,
+    "margin": 0.03,
+    "min_body": 30,
+    "recall@3": 0.0,
+    "noise": 0,
+    "false_context": 0.0,
+    "utility": 0.0
+  },
+  "distances": {
+    "positives": [
+      0.583,
+      0.6363,
+      0.7278,
+      0.5562,
+      0.7172,
+      0.6,
+      0.7482,
+      0.8079,
+      0.5281,
+      0.6938,
+      0.5833,
+      0.5958,
+      0.525,
+      0.6226,
+      0.748,
+      0.8878,
+      0.5612,
+      0.6729,
+      0.8175,
+      0.5292
+    ],
+    "negatives": [
+      1.0,
+      0.8367,
+      0.7598,
+      0.7285,
+      0.8783,
+      0.709,
+      0.8743,
+      0.8811,
+      0.8285,
+      0.7137
+    ]
+  }
+}

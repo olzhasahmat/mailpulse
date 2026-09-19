@@ -1,0 +1,34 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_USER: mailpulse
+          POSTGRES_PASSWORD: mailpulse
+          POSTGRES_DB: mailpulse
+        ports: ["5433:5432"]
+        options: >-
+          --health-cmd "pg_isready -U mailpulse -d mailpulse"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 30
+    env:
+      DATABASE_URL: postgresql+psycopg://mailpulse:mailpulse@localhost:5433/mailpulse
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - name: Migrations match models
+        run: uv run alembic upgrade head && uv run alembic check
+      - run: uv run pytest

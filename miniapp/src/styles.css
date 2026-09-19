@@ -1,0 +1,35 @@
+:root {
+  --bg: var(--tg-theme-bg-color, #ffffff);
+  --text: var(--tg-theme-text-color, #1a1a1a);
+  --hint: var(--tg-theme-hint-color, #8a8a8a);
+  --card: var(--tg-theme-secondary-bg-color, #f4f4f5);
+  --button: var(--tg-theme-button-color, #3390ec);
+  --button-text: var(--tg-theme-button-text-color, #ffffff);
+  --danger: #e0483d;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: var(--bg); color: var(--text); }
+.app { max-width: 560px; margin: 0 auto; padding: 16px 16px 96px; }
+h1 { font-size: 20px; margin: 8px 0 16px; }
+h2 { font-size: 15px; color: var(--hint); text-transform: uppercase; letter-spacing: .03em; margin: 20px 0 8px; }
+.card { background: var(--card); border-radius: 12px; padding: 14px; margin-bottom: 10px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.muted { color: var(--hint); font-size: 13px; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.stat { background: var(--card); border-radius: 12px; padding: 14px; }
+.stat .n { font-size: 26px; font-weight: 700; }
+.stat .l { color: var(--hint); font-size: 13px; margin-top: 2px; }
+input, select { width: 100%; padding: 11px 12px; border: 1px solid var(--card); border-radius: 10px;
+  background: var(--bg); color: var(--text); font-size: 15px; margin-bottom: 8px; }
+button { border: none; border-radius: 10px; padding: 11px 14px; font-size: 15px; font-weight: 600;
+  background: var(--button); color: var(--button-text); cursor: pointer; }
+button.ghost { background: transparent; color: var(--danger); padding: 6px 8px; font-size: 13px; }
+button:disabled { opacity: .5; }
+.tabs { position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: var(--bg);
+  border-top: 1px solid var(--card); }
+.tabs button { flex: 1; background: transparent; color: var(--hint); border-radius: 0; padding: 12px 0; }
+.tabs button.active { color: var(--button); }
+.badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--bg); }
+.imp3 { color: #e0483d; } .imp2 { color: #d69a00; }
+.error { color: var(--danger); font-size: 13px; margin: 6px 0; }
+.center { text-align: center; color: var(--hint); padding: 40px 0; }

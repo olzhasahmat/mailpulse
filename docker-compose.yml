@@ -1,0 +1,79 @@
+name: mailpulse
+
+x-app: &app
+  build: .
+  image: mailpulse:dev
+  env_file:
+    - path: .env
+      required: false
+  environment:
+    DATABASE_URL: postgresql+psycopg://mailpulse:mailpulse@postgres:5432/mailpulse
+    API_HOST: 0.0.0.0
+    MCP_HOST: 0.0.0.0
+  restart: unless-stopped
+  depends_on:
+    migrate:
+      condition: service_completed_successfully
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: mailpulse
+      POSTGRES_PASSWORD: mailpulse
+      POSTGRES_DB: mailpulse
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mailpulse -d mailpulse"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  # Миграции Alembic + таблицы чекпоинтера LangGraph; остальные сервисы ждут его завершения
+  migrate:
+    <<: *app
+    command: mailpulse-migrate
+    restart: "no"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Приём почты: IMAP IDLE по всем активным ящикам. Строго один экземпляр (ADR-015)
+  ingest:
+    <<: *app
+    command: mailpulse-ingest
+    volumes:
+      - attachments:/app/data
+
+  # Граф разбора писем; без ANTHROPIC_API_KEY и TELEGRAM_BOT_TOKEN выполняет только служебные задачи
+  worker:
+    <<: *app
+    command: mailpulse-worker
+    volumes:
+      - attachments:/app/data
+      # Модель эмбеддингов (2,2 ГБ) качается один раз на хост и переживает пересборку образа
+      - ./data/models:/app/data/models
+
+  bot:
+    <<: *app
+    command: mailpulse-bot
+
+  api:
+    <<: *app
+    command: mailpulse-api
+    ports:
+      - "127.0.0.1:8000:8000"
+
+  # Авторизации пока нет — порт открыт только на localhost
+  mcp:
+    <<: *app
+    command: mailpulse-mcp --transport streamable-http
+    ports:
+      - "127.0.0.1:8001:8001"
+
+volumes:
+  pgdata:
+  attachments:
