@@ -1,7 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { api } from "./api.js";
+import { api, openLink } from "./api.js";
 
 const IMPORTANCE = { 3: "🔴 Срочно", 2: "🟡 Важно", 1: "⚪️ К сведению", 0: "Шум" };
+
+const APP_PASSWORD_LINKS = {
+  "gmail.com": ["Gmail", "https://myaccount.google.com/apppasswords"],
+  "googlemail.com": ["Gmail", "https://myaccount.google.com/apppasswords"],
+  "yandex.ru": ["Яндекс", "https://id.yandex.ru/security/app-passwords"],
+  "yandex.kz": ["Яндекс", "https://id.yandex.ru/security/app-passwords"],
+  "ya.ru": ["Яндекс", "https://id.yandex.ru/security/app-passwords"],
+  "mail.ru": ["Mail.ru", "https://account.mail.ru/user/2-step-auth/passwords/"],
+};
+
+function appPasswordLink(email) {
+  const domain = (email.split("@")[1] || "").toLowerCase();
+  return APP_PASSWORD_LINKS[domain] || null;
+}
 
 export default function App() {
   const [tab, setTab] = useState("stats");
@@ -80,11 +94,29 @@ const Stat = ({ n, l }) => (
   <div className="stat"><div className="n">{n}</div><div className="l">{l}</div></div>
 );
 
+function SampleCard() {
+  return (
+    <div className="sample">
+      <div className="row">
+        <b className="imp3">🔴 Срочно</b>
+        <span className="badge">ждёт ответа</span>
+      </div>
+      <div><b>Айгерим Сейткали</b> (buh@partner.kz)</div>
+      <div>Счёт на оплату №507 — 320 000 ₸, оплатить до 14 сентября.</div>
+      <div className="muted">📅 2026-09-14   💰 320 000 KZT</div>
+      <div className="sample-btns">
+        <span>✍️ Ответить</span><span>✅ Прочитано</span><span>🔕 Не важно</span>
+      </div>
+    </div>
+  );
+}
+
 function Accounts() {
   const { loading, data, error, reload } = useAsync(() => api.accounts());
   const [form, setForm] = useState({ email: "", password: "" });
   const [busy, setBusy] = useState(false);
   const [formError, setFormError] = useState(null);
+  const [justConnected, setJustConnected] = useState(false);
 
   const connect = async () => {
     setBusy(true);
@@ -92,6 +124,7 @@ function Accounts() {
     try {
       await api.connectAccount(form);
       setForm({ email: "", password: "" });
+      setJustConnected(true);
       reload();
     } catch (e) {
       setFormError(e.message);
@@ -99,6 +132,22 @@ function Accounts() {
       setBusy(false);
     }
   };
+
+  if (justConnected) {
+    return (
+      <div className="center-block">
+        <div className="ok-mark">✓</div>
+        <h2 style={{ textAlign: "center", color: "var(--text)" }}>Почта подключена</h2>
+        <p className="muted" style={{ textAlign: "center" }}>
+          Теперь важные письма приходят сюда. Вот так будет выглядеть карточка:
+        </p>
+        <SampleCard />
+        <button onClick={() => setJustConnected(false)}>Подключить ещё ящик</button>
+      </div>
+    );
+  }
+
+  const link = appPasswordLink(form.email);
 
   return (
     <>
@@ -112,7 +161,19 @@ function Accounts() {
         <button onClick={connect} disabled={busy || !form.email || !form.password}>
           {busy ? "Проверяю…" : "Подключить"}
         </button>
-        <p className="muted">Gmail и Яндекс — по паролю приложения, не по обычному паролю.</p>
+        <p className="muted">Нужен пароль приложения, а не обычный пароль от почты.</p>
+        {link ? (
+          <button className="linkbtn" onClick={() => openLink(link[1])}>
+            🔑 Создать пароль приложения для {link[0]}
+          </button>
+        ) : (
+          <div className="pw-links">
+            <span className="muted">Создать пароль приложения:</span>
+            <button className="linkbtn" onClick={() => openLink(APP_PASSWORD_LINKS["gmail.com"][1])}>Gmail</button>
+            <button className="linkbtn" onClick={() => openLink(APP_PASSWORD_LINKS["yandex.ru"][1])}>Яндекс</button>
+            <button className="linkbtn" onClick={() => openLink(APP_PASSWORD_LINKS["mail.ru"][1])}>Mail.ru</button>
+          </div>
+        )}
       </div>
       <h2>Мои ящики</h2>
       {loading && <p className="center">Загрузка…</p>}

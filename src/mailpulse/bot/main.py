@@ -8,8 +8,15 @@ import asyncio
 import logging
 
 from aiogram import Dispatcher, F, Router
-from aiogram.filters import CommandStart
-from aiogram.types import CallbackQuery, Message
+from aiogram.filters import CommandObject, CommandStart
+from aiogram.types import (
+    CallbackQuery,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    Message,
+    WebAppInfo,
+)
+from sqlalchemy import func
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
@@ -34,23 +41,55 @@ async def _enqueue_resume(sessionmaker, message_id: int, answer: dict) -> None:
         await queue.enqueue(session, "resume_email", {"message_id": message_id, "answer": answer})
 
 
+WELCOME = (
+    "👋 <b>MailPulse</b> — ассистент для входящей почты.\n\n"
+    "Я читаю ваши ящики (Gmail, Яндекс) и присылаю сюда <b>только важные</b> письма — "
+    "с сутью, суммой и сроком, и сразу с кнопкой «Ответить». "
+    "Реклама, счета и шум остаются в ящике.\n\n"
+    "Чтобы начать, подключите почту 👇"
+)
+CONNECTED_HINT = (
+    "\n\nПодключить ящик можно и из терминала: <code>mailpulse-accounts add you@gmail.com</code>"
+)
+
+
+def _connect_keyboard(miniapp_url: str | None) -> InlineKeyboardMarkup | None:
+    if not miniapp_url or not miniapp_url.startswith("https://"):
+        return None
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="📮 Подключить почту", web_app=WebAppInfo(url=miniapp_url))]
+        ]
+    )
+
+
 @router.message(CommandStart())
-async def start(message: Message, sessionmaker: async_sessionmaker[AsyncSession]) -> None:
+async def start(
+    message: Message, command: CommandObject, sessionmaker: async_sessionmaker[AsyncSession]
+) -> None:
     if message.from_user is None:
         return
+    # t.me/bot?start=<referral> — метка рекламного источника, ставится один раз
+    referral = (command.args or "").strip()[:64] or None
     stmt = (
         insert(User)
-        .values(tg_user_id=message.from_user.id, tg_chat_id=message.chat.id)
+        .values(tg_user_id=message.from_user.id, tg_chat_id=message.chat.id, referral=referral)
         .on_conflict_do_update(
-            index_elements=[User.tg_user_id], set_={"tg_chat_id": message.chat.id}
+            index_elements=[User.tg_user_id],
+            set_={
+                "tg_chat_id": message.chat.id,
+                # первый источник не перезаписываем при повторном /start
+                "referral": func.coalesce(User.referral, insert(User).excluded.referral),
+            },
         )
     )
     async with sessionmaker.begin() as session:
         await session.execute(stmt)
-    await message.answer(
-        "Привет! Я MailPulse: присылаю сюда только важные письма из ваших ящиков.\n\n"
-        "Подключить ящик пока можно из терминала: <code>mailpulse-accounts add you@gmail.com</code>"
-    )
+
+    settings = get_settings()
+    keyboard = _connect_keyboard(settings.miniapp_url)
+    text = WELCOME if keyboard else WELCOME + CONNECTED_HINT
+    await message.answer(text, reply_markup=keyboard)
 
 
 @router.callback_query(F.data.startswith(f"{CALLBACK_PREFIX}:"))

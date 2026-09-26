@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://mailpulse:mailpulse@localhost:5433/mailpulse"
 
     telegram_bot_token: SecretStr | None = None
+    # Публичный HTTPS-адрес Mini App для кнопки «Подключить почту» в /start
+    miniapp_url: str | None = None
     secrets_key: SecretStr | None = None
 
     microsoft_client_id: str | None = None

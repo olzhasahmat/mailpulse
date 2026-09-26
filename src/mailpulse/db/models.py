@@ -123,6 +123,8 @@ class User(Base):
     id: Mapped[int] = _pk()
     tg_user_id: Mapped[int] = mapped_column(BigInteger, unique=True)
     tg_chat_id: Mapped[int] = mapped_column(BigInteger)
+    # Из deep-link t.me/bot?start=<referral> — какая реклама привела пользователя
+    referral: Mapped[str | None] = mapped_column(String(64))
     timezone: Mapped[str] = mapped_column(String(64), server_default="Asia/Almaty")
     digest_time: Mapped[time] = mapped_column(Time, server_default=text("'09:00'"))
     daily_budget_usd: Mapped[Decimal] = mapped_column(Numeric(10, 2), server_default="1.00")
