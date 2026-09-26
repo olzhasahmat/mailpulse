@@ -4,12 +4,21 @@ import pytest
 from httpx import ASGITransport, AsyncClient
 
 from mailpulse.api.auth import build_init_data
-from mailpulse.api.deps import get_sessionmaker
+from mailpulse.api.deps import get_bot, get_sessionmaker
 from mailpulse.api.main import create_app
 from mailpulse.config import Settings, get_settings
 from mailpulse.db import models
 
 pytestmark = pytest.mark.db
+
+
+class FakeBot:
+    def __init__(self) -> None:
+        self.sent: list[tuple[int, str]] = []
+
+    async def send_message(self, chat_id: int, text: str) -> None:
+        self.sent.append((chat_id, text))
+
 
 TOKEN = "123456:test-bot-token"
 SECRETS_KEY = (
@@ -35,8 +44,11 @@ async def client(db, monkeypatch):
     app.dependency_overrides[get_settings] = lambda: Settings(
         telegram_bot_token=TOKEN, secrets_key=SECRETS_KEY
     )
+    fake_bot = FakeBot()
+    app.dependency_overrides[get_bot] = lambda: fake_bot
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as c:
+        c.fake_bot = fake_bot
         yield c
     get_settings.cache_clear()
 
@@ -180,6 +192,11 @@ async def test_delete_removes_account_and_cascades_messages(client, db):
         assert await session.get(models.MailAccount, account_id) is None
         # каскад: письма удалены вместе с ящиком
         assert await session.scalar(select(func.count()).select_from(models.Message)) == 0
+    # после удаления бот прислал напоминание отозвать пароль приложения
+    assert len(client.fake_bot.sent) == 1
+    _, text = client.fake_bot.sent[0]
+    assert "отзовите пароль" in text.lower()
+    assert "myaccount.google.com/apppasswords" in text
 
 
 async def test_cannot_touch_another_users_account(client, db):

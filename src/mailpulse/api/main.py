@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from sqlalchemy import text
 
 from mailpulse.api.routes import router
+from mailpulse.bot.notifier import create_bot
 from mailpulse.config import get_settings
 from mailpulse.db.session import make_engine, make_sessionmaker
 from mailpulse.observability import setup_logging
@@ -26,7 +27,16 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     engine = make_engine()
     app.state.engine = engine
     app.state.sessionmaker = make_sessionmaker(engine)
+    settings = get_settings()
+    # Отдельный экземпляр бота для уведомлений из API (отправка не конфликтует с polling)
+    app.state.bot = (
+        create_bot(settings.telegram_bot_token.get_secret_value())
+        if settings.telegram_bot_token is not None
+        else None
+    )
     yield
+    if app.state.bot is not None:
+        await app.state.bot.session.close()
     await engine.dispose()
 
 

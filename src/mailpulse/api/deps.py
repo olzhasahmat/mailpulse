@@ -17,6 +17,11 @@ def get_sessionmaker(request: Request) -> async_sessionmaker[AsyncSession]:
     return request.app.state.sessionmaker
 
 
+def get_bot(request: Request):
+    """Бот для отправки уведомлений из API. None, если TELEGRAM_BOT_TOKEN не задан."""
+    return getattr(request.app.state, "bot", None)
+
+
 async def current_user(
     request: Request,
     authorization: str = Header(default=""),

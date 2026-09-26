@@ -9,7 +9,7 @@ from imapclient.exceptions import LoginError
 from sqlalchemy import delete, func, select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
-from mailpulse.api.deps import current_user, get_sessionmaker
+from mailpulse.api.deps import current_user, get_bot, get_sessionmaker
 from mailpulse.api.schemas import (
     AccountIn,
     AccountOut,
@@ -23,6 +23,7 @@ from mailpulse.api.schemas import (
 from mailpulse.config import Settings, get_settings
 from mailpulse.db import models as db
 from mailpulse.mail import accounts as mail_accounts
+from mailpulse.notifications import account_deleted_message
 from mailpulse.security import SecretsCipher
 
 log = logging.getLogger(__name__)
@@ -123,16 +124,25 @@ async def delete_account(
     account_id: int,
     user: db.User = Depends(current_user),
     sessionmaker: async_sessionmaker[AsyncSession] = Depends(get_sessionmaker),
+    bot=Depends(get_bot),
 ) -> None:
     """Удалить ящик и стереть все его данные (письма, вложения, эмбеддинги) каскадом.
 
-    Пароль приложения на стороне сервиса это не отзывает — пользователю показывается
-    ссылка на его отзыв в Mini App.
+    Пароль приложения на стороне сервиса это не отзывает. Окно подтверждения с удалением
+    исчезает, поэтому ссылку на отзыв присылаем отдельным сообщением в Telegram.
     """
     async with sessionmaker.begin() as session:
-        await _owned_account(session, account_id, user)
+        account = await _owned_account(session, account_id, user)
+        email = account.email
         # FK с ondelete=CASCADE стирают messages → chunks/attachments/triage/drafts и mailbox_sync
         await session.execute(delete(db.MailAccount).where(db.MailAccount.id == account_id))
+
+    # Best-effort: удаление уже прошло, сбой отправки не должен его отменять
+    if bot is not None:
+        try:
+            await bot.send_message(user.tg_chat_id, account_deleted_message(email))
+        except Exception:
+            log.exception("не удалось отправить напоминание об отзыве пароля для %s", email)
 
 
 @router.get("/rules")
