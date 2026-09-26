@@ -87,17 +87,52 @@ async def connect_account(
         return _account_out(account)
 
 
-@router.delete("/accounts/{account_id}", status_code=204)
-async def disconnect_account(
+async def _owned_account(session, account_id: int, user: db.User) -> db.MailAccount:
+    account = await session.get(db.MailAccount, account_id)
+    if account is None or account.user_id != user.id:
+        raise HTTPException(404, "Ящик не найден")
+    return account
+
+
+@router.post("/accounts/{account_id}/pause", status_code=204)
+async def pause_account(
     account_id: int,
     user: db.User = Depends(current_user),
     sessionmaker: async_sessionmaker[AsyncSession] = Depends(get_sessionmaker),
 ) -> None:
+    """Приостановить приём почты — ящик и данные сохраняются, IMAP отключается."""
     async with sessionmaker.begin() as session:
-        account = await session.get(db.MailAccount, account_id)
-        if account is None or account.user_id != user.id:
-            raise HTTPException(404, "Ящик не найден")
+        await _owned_account(session, account_id, user)
         await mail_accounts.set_status(session, account_id, db.AccountStatus.DISABLED)
+
+
+@router.post("/accounts/{account_id}/resume", status_code=204)
+async def resume_account(
+    account_id: int,
+    user: db.User = Depends(current_user),
+    sessionmaker: async_sessionmaker[AsyncSession] = Depends(get_sessionmaker),
+) -> None:
+    """Возобновить приём почты по ранее подключённому ящику."""
+    async with sessionmaker.begin() as session:
+        await _owned_account(session, account_id, user)
+        await mail_accounts.set_status(session, account_id, db.AccountStatus.ACTIVE)
+
+
+@router.delete("/accounts/{account_id}", status_code=204)
+async def delete_account(
+    account_id: int,
+    user: db.User = Depends(current_user),
+    sessionmaker: async_sessionmaker[AsyncSession] = Depends(get_sessionmaker),
+) -> None:
+    """Удалить ящик и стереть все его данные (письма, вложения, эмбеддинги) каскадом.
+
+    Пароль приложения на стороне сервиса это не отзывает — пользователю показывается
+    ссылка на его отзыв в Mini App.
+    """
+    async with sessionmaker.begin() as session:
+        await _owned_account(session, account_id, user)
+        # FK с ondelete=CASCADE стирают messages → chunks/attachments/triage/drafts и mailbox_sync
+        await session.execute(delete(db.MailAccount).where(db.MailAccount.id == account_id))
 
 
 @router.get("/rules")

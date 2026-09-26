@@ -43,3 +43,7 @@ button:disabled { opacity: .5; }
 .sample { background: var(--card); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
 .sample-btns { display: flex; gap: 8px; margin-top: 8px; }
 .sample-btns span { background: var(--bg); border-radius: 16px; padding: 6px 10px; font-size: 12px; }
+
+.acct-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.chip { background: var(--bg); color: var(--button); border: 1px solid var(--card); border-radius: 16px; padding: 7px 12px; font-size: 13px; }
+.danger { background: var(--danger); color: #fff; }

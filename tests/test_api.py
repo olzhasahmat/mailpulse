@@ -108,3 +108,87 @@ async def test_stats_shape(client):
         "recent",
     }
     assert body["accounts"] == 0
+
+
+async def _seed_account(db, user_id: int, *, status=models.AccountStatus.ACTIVE) -> int:
+    async with db.begin() as session:
+        account = models.MailAccount(
+            user_id=user_id,
+            provider=models.Provider.GMAIL,
+            email="you@gmail.com",
+            auth_type=models.AuthType.APP_PASSWORD,
+            secret_enc=b"x",
+            imap_host="imap.gmail.com",
+            smtp_host="smtp.gmail.com",
+            status=status,
+        )
+        session.add(account)
+        await session.flush()
+        message = models.Message(
+            account_id=account.id,
+            folder="INBOX",
+            uid=1,
+            message_id_hdr="<m@x>",
+            from_addr="a@b.c",
+            subject="Счёт",
+        )
+        session.add(message)
+        await session.flush()
+        return account.id
+
+
+async def _user_id(db, tg_user_id: int) -> int:
+    from sqlalchemy import select
+
+    async with db() as session:
+        return await session.scalar(
+            select(models.User.id).where(models.User.tg_user_id == tg_user_id)
+        )
+
+
+async def test_pause_and_resume_toggle_status(client, db):
+    await client.get("/api/accounts", headers=auth_header(tg_user_id=501))
+    account_id = await _seed_account(db, await _user_id(db, 501))
+
+    assert (
+        await client.post(f"/api/accounts/{account_id}/pause", headers=auth_header(501))
+    ).status_code == 204
+    async with db() as session:
+        assert (
+            await session.get(models.MailAccount, account_id)
+        ).status == models.AccountStatus.DISABLED
+
+    assert (
+        await client.post(f"/api/accounts/{account_id}/resume", headers=auth_header(501))
+    ).status_code == 204
+    async with db() as session:
+        assert (
+            await session.get(models.MailAccount, account_id)
+        ).status == models.AccountStatus.ACTIVE
+
+
+async def test_delete_removes_account_and_cascades_messages(client, db):
+    from sqlalchemy import func, select
+
+    await client.get("/api/accounts", headers=auth_header(tg_user_id=502))
+    account_id = await _seed_account(db, await _user_id(db, 502))
+
+    resp = await client.delete(f"/api/accounts/{account_id}", headers=auth_header(502))
+
+    assert resp.status_code == 204
+    async with db() as session:
+        assert await session.get(models.MailAccount, account_id) is None
+        # каскад: письма удалены вместе с ящиком
+        assert await session.scalar(select(func.count()).select_from(models.Message)) == 0
+
+
+async def test_cannot_touch_another_users_account(client, db):
+    await client.get("/api/accounts", headers=auth_header(tg_user_id=503))
+    account_id = await _seed_account(db, await _user_id(db, 503))
+
+    assert (
+        await client.post(f"/api/accounts/{account_id}/pause", headers=auth_header(999))
+    ).status_code == 404
+    assert (
+        await client.delete(f"/api/accounts/{account_id}", headers=auth_header(999))
+    ).status_code == 404

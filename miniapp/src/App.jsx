@@ -180,15 +180,76 @@ function Accounts() {
       {error && <p className="error">{error}</p>}
       {data?.length === 0 && <p className="muted">Ящиков пока нет.</p>}
       {data?.map((a) => (
-        <div className="card row" key={a.id}>
-          <div>
-            <div>{a.email}</div>
-            <div className="muted">{a.provider} · {a.status}{a.last_error ? ` · ${a.last_error}` : ""}</div>
-          </div>
-          <button className="ghost" onClick={() => api.disconnectAccount(a.id).then(reload)}>Отключить</button>
-        </div>
+        <AccountRow key={a.id} account={a} reload={reload} />
       ))}
     </>
+  );
+}
+
+const STATUS_LABEL = { active: "активен", disabled: "приостановлен", auth_failed: "ошибка входа" };
+
+function AccountRow({ account, reload }) {
+  const [confirming, setConfirming] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const paused = account.status === "disabled";
+  const link = appPasswordLink(account.email);
+
+  const run = async (fn) => {
+    setBusy(true);
+    try {
+      await fn();
+      reload();
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  if (confirming) {
+    return (
+      <div className="card">
+        <div><b>Удалить {account.email}?</b></div>
+        <p className="muted">
+          Ящик и все его письма, вложения и данные будут стёрты безвозвратно.
+        </p>
+        {link && (
+          <>
+            <p className="muted">
+              Пароль приложения при этом не отзывается на стороне {link[0]}.
+              Отзовите его вручную, чтобы доступ точно закрылся:
+            </p>
+            <button className="linkbtn" onClick={() => openLink(link[1])}>
+              🔑 Отозвать пароль приложения в {link[0]}
+            </button>
+          </>
+        )}
+        <div className="acct-actions" style={{ marginTop: 10 }}>
+          <button className="danger" disabled={busy}
+            onClick={() => run(() => api.deleteAccount(account.id))}>
+            Удалить навсегда
+          </button>
+          <button className="ghost" onClick={() => setConfirming(false)}>Отмена</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="card row">
+      <div>
+        <div>{account.email}</div>
+        <div className="muted">
+          {account.provider} · {STATUS_LABEL[account.status] || account.status}
+          {account.last_error ? ` · ${account.last_error}` : ""}
+        </div>
+      </div>
+      <div className="acct-actions">
+        <button className="chip" disabled={busy}
+          onClick={() => run(() => (paused ? api.resumeAccount : api.pauseAccount)(account.id))}>
+          {paused ? "▶️ Возобновить" : "⏸ Приостановить"}
+        </button>
+        <button className="ghost" onClick={() => setConfirming(true)}>🗑</button>
+      </div>
+    </div>
   );
 }
 
